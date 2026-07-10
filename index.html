@@ -69,23 +69,12 @@
             >
               35 - 40 лет
             </button>
-            <button
-              onclick="filterGifts('40-45-years', 'Подарки от 40 до 45 лет')"
-            >
-              40 - 45 лет
-            </button>
           </div>
         </section>
 
         <section id="interests-section" class="filter-section">
-          <h2>Выберите увлечение или хобби:</h2>
+          <h2>Выберите интересы:</h2>
           <div class="grid-buttons interests-grid">
-            <button
-              class="btn-retro"
-              onclick="filterGifts('retro', 'Антиквариат и старина')"
-            >
-              🏛 Антиквариат и старина
-            </button>
             <button
               class="btn-cars"
               onclick="filterGifts('retro-cars', 'Ретро-авто и классика')"
@@ -126,12 +115,30 @@
       style="display: none"
     >
       <div class="view-header">
-        <button class="back-btn" onclick="goBack()">← Назад к поиску</button>
+        <button class="back-btn" onclick="goBackToCategories()">
+          <span class="arrow">←</span> Назад к категориям
+        </button>
         <h2 id="current-category-title">Название категории</h2>
       </div>
 
       <div id="gifts-container" class="gifts-grid"></div>
     </div>
+
+    <div
+      id="detail-interface"
+      class="view-section container"
+      style="display: none"
+    >
+      <div class="view-header">
+        <button class="back-btn" onclick="goBackToGifts()">
+          <span class="arrow">←</span> Назад к подаркам
+        </button>
+        <h2 id="detail-gift-title">Название подарка</h2>
+      </div>
+
+      <div id="gift-detail-content"></div>
+    </div>
+
     <script src="gifts-data.js"></script>
     <script src="script.js"></script>
   </body>
