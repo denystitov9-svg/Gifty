@@ -1,5 +1,3 @@
-// Complete Database updated to English language and Dollar ($) pricing
-// Contains 13+ gift ideas per each and every category
 const giftsData = {
   "1-12-months": [
     {
@@ -8,7 +6,7 @@ const giftsData = {
       price: "$20 - $55",
       where: "Kids stores, Toy markets",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Soft Rattle Blocks",
@@ -16,7 +14,7 @@ const giftsData = {
       price: "$8 - $18",
       where: "Amazon, Target",
       image:
-        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Sensory Textured Balls",
@@ -24,7 +22,7 @@ const giftsData = {
       price: "$6 - $15",
       where: "Local supermarkets, Amazon",
       image:
-        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Musical Crib Mobile",
@@ -32,7 +30,7 @@ const giftsData = {
       price: "$25 - $65",
       where: "Newborn boutique stores",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505043203398-7e4c111acbfa?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Silicone Teething Teether",
@@ -40,7 +38,7 @@ const giftsData = {
       price: "$5 - $12",
       where: "Pharmacies, Walmart",
       image:
-        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1685358268305-c621b38e75d8?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Interactive Musical Drum",
@@ -48,7 +46,7 @@ const giftsData = {
       price: "$15 - $30",
       where: "Toy stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549501602-52168bb8f653?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Plush Nightlight Projector",
@@ -56,7 +54,7 @@ const giftsData = {
       price: "$18 - $40",
       where: "Gift shops, Baby stores",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560859251-d563a49c5e4a?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Tumbler Wobble Toy",
@@ -64,7 +62,7 @@ const giftsData = {
       price: "$7 - $16",
       where: "Traditional toy outlets",
       image:
-        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1589827711524-0fb39b96e630?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Crinkle Fabric Soft Book",
@@ -72,7 +70,7 @@ const giftsData = {
       price: "$8 - $15",
       where: "Bookstores, Target",
       image:
-        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1707143017681-777ab2ac79a4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Wooden First Shape Sorter",
@@ -80,7 +78,7 @@ const giftsData = {
       price: "$12 - $28",
       where: "Eco toy shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622290319146-7b63df48a635?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Suction Cup Highchair Toys",
@@ -88,7 +86,7 @@ const giftsData = {
       price: "$10 - $22",
       where: "Walmart, Baby care zones",
       image:
-        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1504484656217-38f8ffc617f9?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Baby Bath Floating Ducks Set",
@@ -96,7 +94,7 @@ const giftsData = {
       price: "$6 - $14",
       where: "Hypermarkets, online shops",
       image:
-        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Push & Crawl Walking Toy",
@@ -104,7 +102,7 @@ const giftsData = {
       price: "$14 - $35",
       where: "Toy markets, Amazon",
       image:
-        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1704988935392-09fc355154aa?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "1-5-years": [
@@ -114,7 +112,7 @@ const giftsData = {
       price: "$15 - $45",
       where: "Toy Stores, Walmart",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1501686637-b7aa9c48a882?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Kids Balance Bike",
@@ -122,7 +120,7 @@ const giftsData = {
       price: "$40 - $90",
       where: "Sporting goods stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622403718261-bd0e7dd01216?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Kinetic Sandbox Table",
@@ -130,7 +128,7 @@ const giftsData = {
       price: "$20 - $50",
       where: "Craft stores, Target",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Magnetic Building Tiles",
@@ -138,7 +136,7 @@ const giftsData = {
       price: "$25 - $75",
       where: "Educational toy stores",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Interactive Talking Globe",
@@ -146,7 +144,7 @@ const giftsData = {
       price: "$30 - $65",
       where: "Learning toy centers",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1611957082141-c449bb2b4ada?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Wooden Train Track Station",
@@ -154,7 +152,7 @@ const giftsData = {
       price: "$25 - $80",
       where: "IKEA, Specialized toy markets",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1575881737088-a5a2bbf44e85?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Water Doodle Drawing Mat",
@@ -162,7 +160,7 @@ const giftsData = {
       price: "$12 - $26",
       where: "Amazon, Supermarkets",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1599623560574-39d485900c95?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Doctor Roleplay Medical Kit",
@@ -170,7 +168,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Walmart, Fantasy dress up shops",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1573297663823-b4d453566b32?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Foldable Indoor Toddler Tent",
@@ -178,7 +176,7 @@ const giftsData = {
       price: "$22 - $55",
       where: "Home decor shops, Target",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1535572290543-960a8046f5af?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Adjustable Basketball Hoop",
@@ -186,7 +184,7 @@ const giftsData = {
       price: "$35 - $70",
       where: "Sport stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1696563541384-bf48ecbaac45?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Electronic Piano Keyboard Mat",
@@ -194,7 +192,7 @@ const giftsData = {
       price: "$18 - $40",
       where: "Party entertainment shops",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1532330393533-443990a51d10?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Washable Finger Paints Studio",
@@ -202,7 +200,7 @@ const giftsData = {
       price: "$10 - $24",
       where: "Art hobby shops",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1541692641319-981cc79ee10a?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Plush Interactive Puppy Robot",
@@ -210,7 +208,7 @@ const giftsData = {
       price: "$20 - $45",
       where: "Toy shops, Walmart",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1555448049-f8657e9fc8f3?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "6-10-years": [
@@ -220,7 +218,7 @@ const giftsData = {
       price: "$45 - $110",
       where: "Tech outlets, Amazon",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Kids Instant Print Camera",
@@ -228,7 +226,7 @@ const giftsData = {
       price: "$30 - $65",
       where: "Electronics departments",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Starlight Night Astronomy Telescope",
@@ -236,7 +234,7 @@ const giftsData = {
       price: "$55 - $130",
       where: "Discovery shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1625490939776-17cef70ec079?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Magician Essential Illusion Kit",
@@ -244,7 +242,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Toy boutique stores",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526406915894-7bcd65f60845?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Rock Tumbler Science Studio",
@@ -252,7 +250,7 @@ const giftsData = {
       price: "$35 - $70",
       where: "Educational toy hubs",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Illuminated Mechanical Globe",
@@ -260,7 +258,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Hobby shops, Target",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1606206873764-fd15e242df52?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Multiplayer Laser Tag Set",
@@ -268,7 +266,7 @@ const giftsData = {
       price: "$40 - $95",
       where: "Sports retail rows",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1513611771808-7e8ab7f1dec6?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Creative Pottery Wheel Studio",
@@ -276,7 +274,7 @@ const giftsData = {
       price: "$28 - $55",
       where: "Art supply supermarkets",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Durable Outdoor Walkie Talkies",
@@ -284,7 +282,7 @@ const giftsData = {
       price: "$20 - $45",
       where: "Outdoor goods sections",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "3D Printing Pen with PLA",
@@ -292,7 +290,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Tech gadget markets",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1554672408-17407e0322ce?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Ant Farm Educational Habitat",
@@ -300,7 +298,7 @@ const giftsData = {
       price: "$15 - $30",
       where: "Nature specialty kiosks",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Pro LED Light Skate Scooter",
@@ -308,7 +306,7 @@ const giftsData = {
       price: "$35 - $80",
       where: "Walmart, Sport centers",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1702390753019-e43a19d9371f?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Junior Archery Bow & Target Set",
@@ -316,7 +314,7 @@ const giftsData = {
       price: "$22 - $50",
       where: "Toy sections, Target",
       image:
-        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1702390734475-d81dd8ae8fde?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "11-15-years": [
@@ -326,7 +324,7 @@ const giftsData = {
       price: "$50 - $120",
       where: "Gadget shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Bluetooth Pocket Photo Printer",
@@ -334,7 +332,7 @@ const giftsData = {
       price: "$60 - $110",
       where: "Tech stores, Best Buy",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1626958390943-a70309376444?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Electronic Drum Training Pad",
@@ -342,7 +340,7 @@ const giftsData = {
       price: "$35 - $85",
       where: "Music instrument stores",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Escape Room Tabletop Boardgame",
@@ -350,7 +348,7 @@ const giftsData = {
       price: "$20 - $45",
       where: "Boardgame shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1637243218672-d338945efdf7?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Digital Graphic Drawing Tablet",
@@ -358,7 +356,7 @@ const giftsData = {
       price: "$40 - $90",
       where: "Computer retailers",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612600840881-8aba94904ab9?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "DIY Hydroponic Plant Terrarium",
@@ -366,7 +364,7 @@ const giftsData = {
       price: "$30 - $70",
       where: "Eco boutiques, Target",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1520092352425-9699926a9b0b?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Bluetooth Karaoke Microphone",
@@ -374,7 +372,7 @@ const giftsData = {
       price: "$18 - $40",
       where: "Gift shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Advanced Architecture 3D Wooden Kit",
@@ -382,7 +380,7 @@ const giftsData = {
       price: "$25 - $55",
       where: "Hobbycraft outlets",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1600035919823-fb13e3a9f085?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "RGB LED App Strip Lights (50ft)",
@@ -390,7 +388,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Home fixture centers",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581351123004-757df051db8e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Premium Skatepark Skateboard",
@@ -398,7 +396,7 @@ const giftsData = {
       price: "$45 - $95",
       where: "Local skate shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Sneaker Custom Painting Art Set",
@@ -406,7 +404,7 @@ const giftsData = {
       price: "$22 - $50",
       where: "Art craft studios",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1617096819670-6de2869bbd2e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Retro Pixel Art Bluetooth Speaker",
@@ -414,7 +412,7 @@ const giftsData = {
       price: "$50 - $90",
       where: "Gadget boutiques",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1636787732775-e0eb5d157b42?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Youth Professional Volleyball Kit",
@@ -422,7 +420,7 @@ const giftsData = {
       price: "$30 - $65",
       where: "Sporting supermarkets",
       image:
-        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1659215609160-fd5afc42b8ed?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "16-18-years": [
@@ -432,7 +430,7 @@ const giftsData = {
       price: "$40 - $130",
       where: "Electronics stores",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1577190651915-bf62d54d5b36?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Cinema Night Pocket Projector",
@@ -440,7 +438,7 @@ const giftsData = {
       price: "$70 - $180",
       where: "Tech gadgets markets",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1518152006812-edab29b069ac?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Vlogging Ring Light & Tripod",
@@ -448,7 +446,7 @@ const giftsData = {
       price: "$20 - $50",
       where: "Camera supply stores",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1554672408-17407e0322ce?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Instant Polaroid Film Camera",
@@ -456,7 +454,7 @@ const giftsData = {
       price: "$65 - $120",
       where: "Mall department stores",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Premium Fabric Canvas Hammock",
@@ -464,7 +462,7 @@ const giftsData = {
       price: "$18 - $45",
       where: "Tourism tourism centers",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1702390753019-e43a19d9371f?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Wireless Qi Fast-Charging Station",
@@ -472,7 +470,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Amazon, Target",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1702390734475-d81dd8ae8fde?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Classic Wooden Acoustic Ukulele",
@@ -480,7 +478,7 @@ const giftsData = {
       price: "$35 - $75",
       where: "Music instrument centers",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1584695369221-3d8a8ebfeef0?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Urban Water-resistant Backpack",
@@ -488,7 +486,7 @@ const giftsData = {
       price: "$30 - $70",
       where: "Apparel outfit retailers",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1502892247800-37f114ca1e24?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Natural Soy Scented Candle Studio",
@@ -496,7 +494,7 @@ const giftsData = {
       price: "$22 - $45",
       where: "Craft hobby shops",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Multi-game Desk Foosball Table",
@@ -504,7 +502,7 @@ const giftsData = {
       price: "$45 - $90",
       where: "Toy recreation outlets",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Stainless Insulated Travel Tumbler",
@@ -512,7 +510,7 @@ const giftsData = {
       price: "$20 - $45",
       where: "Walmart, online stores",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1625490939776-17cef70ec079?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Calligraphy & Bullet Journal Kit",
@@ -520,7 +518,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Stationery shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1526406915894-7bcd65f60845?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Streaming Platform Gift Card",
@@ -528,7 +526,7 @@ const giftsData = {
       price: "$15 - $100",
       where: "Web checkout, grocery racks",
       image:
-        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "19-25-years": [
@@ -538,7 +536,7 @@ const giftsData = {
       price: "$60 - $160",
       where: "Tech shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1600035919823-fb13e3a9f085?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Smart Health Fitness Tracker",
@@ -546,7 +544,7 @@ const giftsData = {
       price: "$35 - $120",
       where: "Sports tech centers",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581351123004-757df051db8e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Electric Espresso Coffee Maker",
@@ -554,7 +552,7 @@ const giftsData = {
       price: "$50 - $140",
       where: "Home appliance markets",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Ergonomic Memory Foam Cushion",
@@ -562,7 +560,7 @@ const giftsData = {
       price: "$25 - $55",
       where: "Furniture department rows",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1617096819670-6de2869bbd2e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Compact Massage Muscle Gun",
@@ -570,7 +568,7 @@ const giftsData = {
       price: "$40 - $95",
       where: "Wellness tech catalogs",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1636787732775-e0eb5d157b42?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Minimalist RFID Leather Wallet",
@@ -578,7 +576,7 @@ const giftsData = {
       price: "$20 - $50",
       where: "Fashion clothing outlets",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1659215609160-fd5afc42b8ed?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Professional Cocktail Shaker Set",
@@ -586,7 +584,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Kitchen accessory boutiques",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1597638566411-4e4dc7854728?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Natural Bamboo Bed Laptop Stand",
@@ -594,7 +592,7 @@ const giftsData = {
       price: "$22 - $45",
       where: "Target, office catalog lines",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1713526211434-0b4c6c9adaa7?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Vibrant Cocktail Neon Wall Lamp",
@@ -602,7 +600,7 @@ const giftsData = {
       price: "$30 - $70",
       where: "Home design studios",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Premium Matcha Tea Whisk Set",
@@ -610,7 +608,7 @@ const giftsData = {
       price: "$25 - $50",
       where: "Gourmet tea distributors",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1626958390943-a70309376444?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Waterproof Bluetooth Travel Speaker",
@@ -618,7 +616,7 @@ const giftsData = {
       price: "$35 - $80",
       where: "Best Buy, electronic stores",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Boardgame Fantasy Strategy Edition",
@@ -626,7 +624,7 @@ const giftsData = {
       price: "$40 - $85",
       where: "Boardgame hobby centers",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1637243218672-d338945efdf7?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Apparel Store Shopping Voucher",
@@ -634,7 +632,7 @@ const giftsData = {
       price: "$25 - $150",
       where: "Online delivery checkouts",
       image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612600840881-8aba94904ab9?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "26-35-years": [
@@ -644,7 +642,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Kitchen stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Smart Multi-room Speaker Pod",
@@ -652,7 +650,7 @@ const giftsData = {
       price: "$50 - $150",
       where: "Tech hardware centers",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Premium Chef Knife Leather Roll",
@@ -660,7 +658,7 @@ const giftsData = {
       price: "$45 - $120",
       where: "Cutlery boutique outlets",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Acoustic Vinyl Record Player",
@@ -668,7 +666,7 @@ const giftsData = {
       price: "$70 - $220",
       where: "Music records distributors",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505043203398-7e4c111acbfa?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Ultrasonic Home Humidifier Diffuser",
@@ -676,7 +674,7 @@ const giftsData = {
       price: "$22 - $55",
       where: "Wellness home departments",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1685358268305-c621b38e75d8?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Compact Leather Travel Tech Pouch",
@@ -684,7 +682,7 @@ const giftsData = {
       price: "$20 - $45",
       where: "Leather accessories rows",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549501602-52168bb8f653?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Gourmet Hot Sauce Master Box",
@@ -692,7 +690,7 @@ const giftsData = {
       price: "$25 - $50",
       where: "Specialty food emporiums",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560859251-d563a49c5e4a?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Shiatsu Heated Neck Massager",
@@ -700,7 +698,7 @@ const giftsData = {
       price: "$35 - $75",
       where: "Pharmacy health zones, Amazon",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1589827711524-0fb39b96e630?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Cast Iron Dutch Oven Pot",
@@ -708,7 +706,7 @@ const giftsData = {
       price: "$45 - $110",
       where: "Kitchenware department rows",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1707143017681-777ab2ac79a4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Car Dashcam 4K Recording Kit",
@@ -716,7 +714,7 @@ const giftsData = {
       price: "$60 - $140",
       where: "Automotive upgrade kiosks",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622290319146-7b63df48a635?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Craft Beer Home Tasting Kit",
@@ -724,7 +722,7 @@ const giftsData = {
       price: "$24 - $48",
       where: "Souvenir gift shops",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1504484656217-38f8ffc617f9?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Scratch-off World Travel Map",
@@ -732,7 +730,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Bookstores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Spa Experience Gift Voucher",
@@ -740,7 +738,7 @@ const giftsData = {
       price: "$50 - $200",
       where: "Local spa networks, online",
       image:
-        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1704988935392-09fc355154aa?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "36-40-years": [
@@ -750,7 +748,7 @@ const giftsData = {
       price: "$40 - $95",
       where: "Home decor shops",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "High-End Electric Coffee Grinder",
@@ -758,7 +756,7 @@ const giftsData = {
       price: "$70 - $190",
       where: "Coffee gear tech rows",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Genuine Leather Business Briefcase",
@@ -766,7 +764,7 @@ const giftsData = {
       price: "$80 - $250",
       where: "Baggage luxury stores",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Smart Indoor Herb Garden Box",
@@ -774,7 +772,7 @@ const giftsData = {
       price: "$60 - $130",
       where: "Smart garden boutique stores",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505043203398-7e4c111acbfa?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Acoustic Noise-Isolating Headphones",
@@ -782,7 +780,7 @@ const giftsData = {
       price: "$120 - $350",
       where: "Premium audio markets, Best Buy",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1685358268305-c621b38e75d8?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Handcrafted Oak Wood Whiskey Decanter",
@@ -790,7 +788,7 @@ const giftsData = {
       price: "$45 - $110",
       where: "Gift artisan hubs, Etsy",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549501602-52168bb8f653?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Heavy Weighted Sleep Blanket",
@@ -798,7 +796,7 @@ const giftsData = {
       price: "$50 - $120",
       where: "Home bedding supermarkets",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560859251-d563a49c5e4a?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Robot Vacuum Cleaner System",
@@ -806,7 +804,7 @@ const giftsData = {
       price: "$130 - $350",
       where: "Home appliances malls",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1589827711524-0fb39b96e630?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Premium BBQ Meat Smoking Kit",
@@ -814,7 +812,7 @@ const giftsData = {
       price: "$30 - $65",
       where: "Hardware grilling lines, Amazon",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1707143017681-777ab2ac79a4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Aviation Carbon Fiber Luggage Case",
@@ -822,7 +820,7 @@ const giftsData = {
       price: "$90 - $240",
       where: "Luggage boutique lines",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622290319146-7b63df48a635?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Orthopedic Massage Car Seat Topper",
@@ -830,7 +828,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Car care specialty centers",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1504484656217-38f8ffc617f9?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Luxury Fountain Pen Inkwell Set",
@@ -838,7 +836,7 @@ const giftsData = {
       price: "$35 - $90",
       where: "Stationery collectors markets",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Country Resort Weekend Voucher",
@@ -846,7 +844,7 @@ const giftsData = {
       price: "$100 - $400",
       where: "Tourism agencies websites",
       image:
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1704988935392-09fc355154aa?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "retro-cars": [
@@ -857,7 +855,7 @@ const giftsData = {
       price: "$40 - $120",
       where: "Hobby stores, eBay",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1587750059638-e7e8c43b99fc?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -866,7 +864,7 @@ const giftsData = {
       price: "$30 - $85",
       where: "Decor shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1584345604325-f5091269a0d1?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -875,7 +873,7 @@ const giftsData = {
       price: "$25 - $70",
       where: "Men accessories fashion shops",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1591293835940-934a7c4f2d9b?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -884,7 +882,7 @@ const giftsData = {
       price: "$15 - $45",
       where: "Online print shops, Etsy",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1534093607318-f025413f49cb?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -893,7 +891,7 @@ const giftsData = {
       price: "$20 - $50",
       where: "Hobbycraft platforms, Amazon",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1489008777659-ad1fc8e07097?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -902,7 +900,7 @@ const giftsData = {
       price: "$8 - $20",
       where: "Car boutique gift corners",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1621971231299-d2b69f9b3fec?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -911,7 +909,7 @@ const giftsData = {
       price: "$35 - $90",
       where: "Book distributors, Amazon",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1530642901805-fdb3c28754b8?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -920,7 +918,7 @@ const giftsData = {
       price: "$18 - $40",
       where: "Antiques shops, souvenir hubs",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1590522427073-1afdcb897df3?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -929,7 +927,7 @@ const giftsData = {
       price: "$30 - $75",
       where: "Hardware stores",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1523828446771-151afb8374f1?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -938,7 +936,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Brand merch fashion shops",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1528500474434-2675c175491e?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -947,7 +945,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Automotive dealerships",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1461638023147-7d732b807d9c?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -956,7 +954,7 @@ const giftsData = {
       price: "$12 - $30",
       where: "Retro novelty shops",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1472591339360-3d2c23f5a619?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
@@ -965,7 +963,7 @@ const giftsData = {
       price: "$10 - $25",
       where: "Etsy artisanal stores",
       image:
-        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1457332253637-21d324d25df9?w=600&auto=format&fit=crop&q=80",
     },
   ],
   gaming: [
@@ -975,7 +973,7 @@ const giftsData = {
       price: "$50 - $150",
       where: "Best Buy, Amazon",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612198188060-c7c2a3b66eae?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Wireless Ergonomic Pro Mouse",
@@ -983,7 +981,7 @@ const giftsData = {
       price: "$45 - $110",
       where: "Tech centers, electronic shops",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1626958390943-a70309376444?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Pro Spatial Sound Headset",
@@ -991,7 +989,7 @@ const giftsData = {
       price: "$60 - $180",
       where: "GameStop, Best Buy",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Extended RGB Mouse Pad Mat",
@@ -999,7 +997,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Online tech stores",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1637243218672-d338945efdf7?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Smart Ambient Light Bars Set",
@@ -1007,7 +1005,7 @@ const giftsData = {
       price: "$40 - $100",
       where: "Smart home gadgets, Amazon",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1612600840881-8aba94904ab9?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Next-Gen Console Gamepad",
@@ -1015,7 +1013,7 @@ const giftsData = {
       price: "$60 - $75",
       where: "Official electronics department stores",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1520092352425-9699926a9b0b?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Controller Dual Charging Dock",
@@ -1023,7 +1021,7 @@ const giftsData = {
       price: "$15 - $30",
       where: "Game store networks",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1544652478-6653e09f18a2?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Blue Light Blocking Glasses",
@@ -1031,7 +1029,7 @@ const giftsData = {
       price: "$20 - $60",
       where: "Opticians, specialized web platforms",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1600035919823-fb13e3a9f085?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Ergonomic Lumbar Pillow",
@@ -1039,7 +1037,7 @@ const giftsData = {
       price: "$25 - $50",
       where: "Furniture mall sections",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581351123004-757df051db8e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Streaming Condenser Microphone",
@@ -1047,7 +1045,7 @@ const giftsData = {
       price: "$50 - $130",
       where: "Audio equipment markets",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Game Universe Lore Artbook",
@@ -1055,7 +1053,7 @@ const giftsData = {
       price: "$30 - $65",
       where: "Comic book stores",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1617096819670-6de2869bbd2e?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Handheld Retro Emulator Pod",
@@ -1063,7 +1061,7 @@ const giftsData = {
       price: "$40 - $95",
       where: "Retro computing kiosks",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1636787732775-e0eb5d157b42?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Digital Game Store Gift Card",
@@ -1071,7 +1069,7 @@ const giftsData = {
       price: "$10 - $100",
       where: "Online purchase, convenience checkout cards",
       image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1659215609160-fd5afc42b8ed?w=600&auto=format&fit=crop&q=80",
     },
   ],
   fishing: [
@@ -1081,7 +1079,7 @@ const giftsData = {
       price: "$35 - $90",
       where: "Outdoor equipment shops",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1541742425281-c1d3fc8aff96?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Multitool Fishing Plier Gripper",
@@ -1089,7 +1087,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Anglers equipment gear stalls",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1529230117010-b6c436154f25?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Waterproof Multi-pocket Vest",
@@ -1097,7 +1095,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Hunting and outdoor stores",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1551131618-3f0a5cf594b4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Digital Portable Fish Scale",
@@ -1105,7 +1103,7 @@ const giftsData = {
       price: "$10 - $22",
       where: "Sports retail spots",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1545450660-3378a7f3a364?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Premium Tackle Box Organizer",
@@ -1113,7 +1111,7 @@ const giftsData = {
       price: "$20 - $55",
       where: "Fishing tackle marts, Amazon",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505850557988-b858c0aec076?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Polarized Fishing Sunglasses",
@@ -1121,7 +1119,7 @@ const giftsData = {
       price: "$18 - $50",
       where: "Optic outlets, sports retail",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1552340745-89c5073640ad?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Electronic Smart Fish Finder",
@@ -1129,7 +1127,7 @@ const giftsData = {
       price: "$90 - $220",
       where: "Professional marine equipment centers",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1583249598754-b7a2f59651fb?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Thermal Vacuum Flask Thermos",
@@ -1137,7 +1135,7 @@ const giftsData = {
       price: "$20 - $45",
       where: "Tourism gear shops, Walmart",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1611954268683-6a7fab18afdf?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Waterproof Tactical Backpack",
@@ -1145,7 +1143,7 @@ const giftsData = {
       price: "$35 - $80",
       where: "Military surplus, outdoor outlets",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1605499907240-d4240d766581?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Fleece Lining Camo Balaclava",
@@ -1153,7 +1151,7 @@ const giftsData = {
       price: "$10 - $25",
       where: "Winter wear sports rows",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1634540391897-f7929a7674ba?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Compact Folding Camp Chair",
@@ -1161,7 +1159,7 @@ const giftsData = {
       price: "$15 - $40",
       where: "Camping supermarkets, Target",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1656155175006-e2ee62a270c4?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Luminous Night Fishing Floats",
@@ -1169,7 +1167,7 @@ const giftsData = {
       price: "$12 - $28",
       where: "Angling gear shops",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1535036997436-f088d7774803?w=600&auto=format&fit=crop&q=80",
     },
     {
       title: "Inflatable Hunter Floating Tube",
@@ -1177,7 +1175,7 @@ const giftsData = {
       price: "$80 - $180",
       where: "Boat dealerships, specialist sports houses",
       image:
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1592928230658-87ab4b4141a6?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "modern-collecting": [
@@ -1188,7 +1186,7 @@ const giftsData = {
       price: "$12 - $45",
       where: "Geek shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1197,7 +1195,7 @@ const giftsData = {
       price: "$150 - $650",
       where: "Official LEGO flagship stores",
       image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1206,7 +1204,7 @@ const giftsData = {
       price: "$250 - $600",
       where: "Sideshow Collectibles, Comic stores",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1215,7 +1213,7 @@ const giftsData = {
       price: "$40 - $150",
       where: "Publisher studio portals, Etsy",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505043203398-7e4c111acbfa?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1224,7 +1222,7 @@ const giftsData = {
       price: "$15 - $35",
       where: "Fandom pop culture boutiques",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1685358268305-c621b38e75d8?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1233,7 +1231,7 @@ const giftsData = {
       price: "$25 - $70",
       where: "Exhibition supply sellers, Amazon",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1549501602-52168bb8f653?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1242,7 +1240,7 @@ const giftsData = {
       price: "$80 - $250",
       where: "Comic-Con marketplaces, geek stores",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560859251-d563a49c5e4a?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1251,7 +1249,7 @@ const giftsData = {
       price: "$30 - $500",
       where: "Auction houses, eBay trading hubs",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1589827711524-0fb39b96e630?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1260,7 +1258,7 @@ const giftsData = {
       price: "$10 - $28",
       where: "Independent artist crafts lanes",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1707143017681-777ab2ac79a4?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1269,7 +1267,7 @@ const giftsData = {
       price: "$200 - $700",
       where: "Collector specialty stores",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1622290319146-7b63df48a635?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1278,7 +1276,7 @@ const giftsData = {
       price: "$25 - $60",
       where: "Media entertainment shops",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1504484656217-38f8ffc617f9?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1287,7 +1285,7 @@ const giftsData = {
       price: "$50 - $1000",
       where: "Antique books distributors",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1484820540004-14229fe36ca4?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
@@ -1296,7 +1294,7 @@ const giftsData = {
       price: "$40 - $180",
       where: "Modern art exhibition shops",
       image:
-        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1704988935392-09fc355154aa?w=600&auto=format&fit=crop&q=80",
     },
   ],
 };
