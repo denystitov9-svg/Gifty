@@ -1,108 +1,109 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Гид Подарков — Найди идеальную идею</title>
+    <title>GiftGuide — Find the Perfect Idea</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="main-interface">
       <header class="header">
-        <div class="container">
-          <h1 class="logo">🎁 ПодарокГид</h1>
-          <p class="tagline">
-            Генератор идей: найди идеальный подарок, а где купить — мы
-            подскажем!
-          </p>
+        <div class="container header-flex">
+          <div class="header-text">
+            <h1 class="logo">🎁 GiftGuide</h1>
+            <p class="tagline">
+              Idea Generator: find the perfect gift, and we will tell you where
+              to buy it!
+            </p>
+          </div>
+          <div class="cart-icon-container" onclick="toggleCart()">
+            <span class="cart-icon">🛒</span>
+            <span id="cart-count" class="cart-count">0</span>
+          </div>
         </div>
       </header>
 
       <main class="main-content container">
         <div class="tabs">
           <button class="tab-btn active" onclick="switchTab('age')">
-            Искать по возрасту
+            Search by Age
           </button>
           <button class="tab-btn" onclick="switchTab('interests')">
-            Искать по интересам
+            Search by Interests
           </button>
         </div>
 
         <section id="age-section" class="filter-section active">
-          <h2>Выберите возраст:</h2>
+          <h2>Select Age Group:</h2>
           <div class="grid-buttons">
             <button
-              onclick="filterGifts('1-12-months', 'Подарки от 1 до 12 месяцев')"
+              onclick="filterGifts('1-12-months', 'Gifts for 1 - 12 Months')"
             >
-              1 - 12 месяцев
+              1 - 12 Months
+            </button>
+            <button onclick="filterGifts('1-5-years', 'Gifts for 1 - 5 Years')">
+              1 - 5 Years
             </button>
             <button
-              onclick="filterGifts('1-5-years', 'Подарки от 1 года до 5 лет')"
+              onclick="filterGifts('6-10-years', 'Gifts for 6 - 10 Years')"
             >
-              1 - 5 лет
-            </button>
-            <button onclick="filterGifts('6-9-years', 'Подарки от 6 до 9 лет')">
-              6 - 9 лет
+              6 - 10 Years
             </button>
             <button
-              onclick="filterGifts('10-13-years', 'Подарки от 10 до 13 лет')"
+              onclick="filterGifts('11-15-years', 'Gifts for 11 - 15 Years')"
             >
-              10 - 13 лет
+              11 - 15 Years
             </button>
             <button
-              onclick="filterGifts('14-16-years', 'Подарки от 14 до 16 лет')"
+              onclick="filterGifts('16-18-years', 'Gifts for 16 - 18 Years')"
             >
-              14 - 16 лет
+              16 - 18 Years
             </button>
             <button
-              onclick="filterGifts('17-20-years', 'Подарки от 17 до 20 лет')"
+              onclick="filterGifts('19-25-years', 'Gifts for 19 - 25 Years')"
             >
-              17 - 20 лет
+              19 - 25 Years
             </button>
             <button
-              onclick="filterGifts('21-24-years', 'Подарки от 21 до 24 лет')"
+              onclick="filterGifts('26-35-years', 'Gifts for 26 - 35 Years')"
             >
-              21 - 24 года
+              26 - 35 Years
             </button>
             <button
-              onclick="filterGifts('35-40-years', 'Подарки от 35 до 40 лет')"
+              onclick="filterGifts('36-40-years', 'Gifts for 36 - 40 Years')"
             >
-              35 - 40 лет
+              36 - 40 Years
             </button>
           </div>
         </section>
 
         <section id="interests-section" class="filter-section">
-          <h2>Выберите интересы:</h2>
+          <h2>Select Interest:</h2>
           <div class="grid-buttons interests-grid">
             <button
               class="btn-cars"
-              onclick="filterGifts('retro-cars', 'Ретро-авто и классика')"
+              onclick="filterGifts('retro-cars', 'Retro Cars & Classics')"
             >
-              🚗 Ретро-авто и классика
+              🚗 Retro Cars & Classics
             </button>
             <button
               class="btn-gaming"
-              onclick="filterGifts('gaming', 'Игровые штуки и гейминг')"
+              onclick="filterGifts('gaming', 'Gaming & Gadgets')"
             >
-              🎮 Игровые штуки и гейминг
+              🎮 Gaming & Gadgets
             </button>
             <button
               class="btn-fishing"
-              onclick="filterGifts('fishing', 'Рыбалка и охота')"
+              onclick="filterGifts('fishing', 'Fishing & Hunting')"
             >
-              🎣 Рыбалка и охота
+              🎣 Fishing & Hunting
             </button>
             <button
               class="btn-modern"
-              onclick="
-                filterGifts(
-                  'modern-collecting',
-                  'Современное коллекционирование',
-                )
-              "
+              onclick="filterGifts('modern-collecting', 'Modern Collecting')"
             >
-              🧸 Современное коллекционирование
+              🧸 Modern Collecting
             </button>
           </div>
         </section>
@@ -116,11 +117,10 @@
     >
       <div class="view-header">
         <button class="back-btn" onclick="goBackToCategories()">
-          <span class="arrow">←</span> Назад к категориям
+          <span class="arrow">←</span> Back to Categories
         </button>
-        <h2 id="current-category-title">Название категории</h2>
+        <h2 id="current-category-title">Category Name</h2>
       </div>
-
       <div id="gifts-container" class="gifts-grid"></div>
     </div>
 
@@ -131,12 +131,32 @@
     >
       <div class="view-header">
         <button class="back-btn" onclick="goBackToGifts()">
-          <span class="arrow">←</span> Назад к подаркам
+          <span class="arrow">←</span> Back to Gifts
         </button>
-        <h2 id="detail-gift-title">Название подарка</h2>
+        <h2 id="detail-gift-title">Gift Title</h2>
       </div>
+      <div id="detail-content-container"></div>
+    </div>
 
-      <div id="gift-detail-content"></div>
+    <div id="cart-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Your Shopping Cart</h3>
+          <span class="close-modal" onclick="toggleCart()">&times;</span>
+        </div>
+        <div id="cart-items-list"></div>
+        <div class="modal-footer">
+          <div class="cart-total">
+            Total Est. Cost: <span id="cart-total-price">$0</span>
+          </div>
+          <button
+            class="checkout-btn"
+            onclick="alert('Proceeding to checkout/save options!')"
+          >
+            Checkout
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="gifts-data.js"></script>

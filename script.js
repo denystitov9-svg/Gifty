@@ -1,11 +1,15 @@
-// Загружаем сохраненные данные из localStorage или создаем чистый объект, если зашли впервые
+// LocalStorage data loading
 const userInteractions =
   JSON.parse(localStorage.getItem("gift_reviews_data")) || {};
+let cart = JSON.parse(localStorage.getItem("gift_cart_data")) || [];
 
 let currentCategoryKey = "";
 let currentCategoryName = "";
 
-// Переключение вкладок "Возраст" и "Интересы" на главном экране
+document.addEventListener("DOMContentLoaded", () => {
+  updateCartCount();
+});
+
 function switchTab(tabName) {
   const buttons = document.querySelectorAll(".tab-btn");
   buttons.forEach((btn) => btn.classList.remove("active"));
@@ -13,11 +17,9 @@ function switchTab(tabName) {
 
   document.getElementById("age-section").classList.remove("active");
   document.getElementById("interests-section").classList.remove("active");
-
   document.getElementById(`${tabName}-section`).classList.add("active");
 }
 
-// Главная магия интерфейса: открываем категорию, прячем ВСЁ остальное
 function filterGifts(categoryKey, categoryName) {
   currentCategoryKey = categoryKey;
   currentCategoryName = categoryName;
@@ -28,195 +30,144 @@ function filterGifts(categoryKey, categoryName) {
   const container = document.getElementById("gifts-container");
   const title = document.getElementById("current-category-title");
 
-  // Очищаем контейнер карточек перед выводом новых
   container.innerHTML = "";
-
-  // Записываем имя выбранной категории в заголовок страницы просмотра
   title.innerText = categoryName;
 
-  // Берем данные из подключенного внешнего файла giftsData
   const gifts = giftsData[categoryKey];
 
   if (!gifts || gifts.length === 0) {
     container.innerHTML =
-      '<p style="grid-column: 1/-1; text-align:center; color:#999;">Для этой категории идеи скоро добавятся!</p>';
+      '<p style="grid-column: 1/-1; text-align:center; color:#999;">Ideas for this category will be added soon!</p>';
   } else {
-    // Рендерим карточки
-    gifts.forEach((gift, index) => {
-      const giftId = `${categoryKey}-${index}`;
-
-      // Инициализируем данные подарка, если их еще не было в памяти
-      if (!userInteractions[giftId]) {
-        userInteractions[giftId] = { rating: 0, comments: [] };
-      }
-
+    gifts.forEach((gift) => {
       const card = document.createElement("div");
       let cardClass = "gift-card";
       if (gift.type === "retro") cardClass += " retro-card";
       if (gift.type === "modern") cardClass += " modern-card";
 
       card.className = cardClass;
-
-      // Клик по всей карточке переносит на ОТДЕЛЬНЫЙ экран
-      card.onclick = () => openGiftDetail(categoryKey, index);
-
-      // Проверяем наличие картинки в базе данных
-      const imgSrc = gift.image
-        ? gift.image
-        : "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500";
-
       card.innerHTML = `
-        <div class="gift-image-wrapper">
-          <img class="gift-image" src="${imgSrc}" alt="${gift.title}">
-        </div>
-        <div class="gift-card-content">
+        <div onclick="showDetail('${categoryKey}', '${gift.title}')" style="cursor:pointer;">
+          ${gift.image ? `<img src="${gift.image}" alt="${gift.title}" class="gift-card-img">` : ""}
           <h4>${gift.title}</h4>
-          <p class="desc">${gift.desc.substring(0, 70)}...</p>
-          <div class="card-footer-info">
-            <span class="price-tag">${gift.price.split(" - ")[0]}</span>
-            <span class="click-prompt">Посмотреть →</span>
-          </div>
+          <p class="desc">${gift.desc}</p>
+        </div>
+        <div class="gift-info">
+          <p><strong>💰 Est. Price:</strong> ${gift.price}</p>
+          <p><strong>📍 Where to find:</strong> ${gift.where}</p>
+          <button class="add-to-cart-btn" onclick="addToCart('${gift.title}', '${gift.price}', '${gift.image || ""}')">Add to Cart</button>
         </div>
       `;
       container.appendChild(card);
     });
   }
 
-  // Скрываем главное меню, показываем только список подарков
   mainInterface.style.display = "none";
   viewInterface.style.display = "block";
   detailInterface.style.display = "none";
-
-  // Прокручиваем страницу наверх
   window.scrollTo(0, 0);
 }
 
-// Открытие ОТДЕЛЬНОГО экрана для одного конкретного подарка
-function openGiftDetail(categoryKey, index) {
-  const giftId = `${categoryKey}-${index}`;
-  const gift = giftsData[categoryKey][index];
-
-  document.getElementById("main-interface").style.display = "none";
-  document.getElementById("view-interface").style.display = "none";
+function showDetail(categoryKey, giftTitle) {
+  const gifts = giftsData[categoryKey];
+  const gift = gifts.find((g) => g.title === giftTitle);
+  if (!gift) return;
 
   const detailInterface = document.getElementById("detail-interface");
-  detailInterface.style.display = "block";
+  const mainInterface = document.getElementById("main-interface");
+  const viewInterface = document.getElementById("view-interface");
+  const container = document.getElementById("detail-content-container");
 
-  document.getElementById("detail-gift-title").innerText = gift.title;
+  const giftId = encodeURIComponent(gift.title);
+  if (!userInteractions[giftId]) {
+    userInteractions[giftId] = { rating: 5, comments: [] };
+  }
 
-  const imgSrc = gift.image
-    ? gift.image
-    : "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=600";
+  const interactions = userInteractions[giftId];
+  const starRatingHtml = [1, 2, 3, 4, 5]
+    .map(
+      (num) =>
+        `<span class="star-clickable ${num <= interactions.rating ? "selected" : ""}" onclick="setDetailRating('${giftId}', ${num})">★</span>`,
+    )
+    .join("");
 
-  const contentContainer = document.getElementById("gift-detail-content");
-  contentContainer.innerHTML = `
+  const initialCommentsHtml = interactions.comments
+    .map(
+      (c) => `
+      <div class="comment-item">
+        <div class="comment-stars">${"★".repeat(c.stars)}${"☆".repeat(5 - c.stars)}</div>
+        <div class="comment-text">${c.text}</div>
+      </div>
+    `,
+    )
+    .join("");
+
+  container.innerHTML = `
     <div class="detail-layout">
-      <div class="detail-left">
-        <img class="detail-image" src="${imgSrc}" alt="${gift.title}">
-        <p class="detail-desc">${gift.desc}</p>
-        <div class="detail-info-block">
-          <p><strong>💰 Примерная цена:</strong> ${gift.price}</p>
-          <p><strong>📍 Где искать:</strong> ${gift.where}</p>
+      <div class="detail-left-side">
+        ${gift.image ? `<img src="${gift.image}" alt="${gift.title}" class="detail-main-img">` : ""}
+        <div class="detail-description-block">
+          <h3>Description</h3>
+          <p class="detail-full-desc">${gift.desc}</p>
         </div>
       </div>
-      
-      <div class="detail-right">
-        <div class="rating-section">
-          <span class="rating-label">Оцените эту идею:</span>
-          <div class="stars" data-gift-id="${giftId}">
-            ${[1, 2, 3, 4, 5]
-              .map(
-                (num) => `
-              <span class="star ${userInteractions[giftId].rating >= num ? "selected" : ""}" data-value="${num}">★</span>
-            `,
-              )
-              .join("")}
-          </div>
-          <button class="reset-rating-btn" onclick="resetRating('${giftId}')">✕ Сбросить оценку</button>
-        </div>
 
-        <div class="comments-section">
-          <h5>Отзывы и комментарии:</h5>
-          <div class="comments-list" id="detail-comments-list-${giftId}">
-            ${
-              userInteractions[giftId].comments.length === 0
-                ? '<p class="no-comments">Здесь пока нет отзывов. Будьте первыми!</p>'
-                : userInteractions[giftId].comments
-                    .map(
-                      (c) => `
-                <div class="comment-item">
-                  <div class="comment-stars">${"★".repeat(c.stars)}${"☆".repeat(5 - c.stars)}</div>
-                  <div class="comment-text">${c.text}</div>
-                </div>
-              `,
-                    )
-                    .join("")
-            }
+      <div class="detail-right-side">
+        <div class="sticky-info-panel">
+          <div class="panel-row"><strong>💰 Price Range:</strong> <span>${gift.price}</span></div>
+          <div class="panel-row"><strong>📍 Available At:</strong> <span>${gift.where}</span></div>
+          <button class="add-to-cart-btn wide-btn" onclick="addToCart('${gift.title}', '${gift.price}', '${gift.image || ""}')">⚡ Add to Shopping Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-bottom-side">
+      <hr class="separator">
+      <div class="reviews-section">
+        <h3>User Reviews & Feedbacks</h3>
+        
+        <div class="leave-review-box">
+          <h4>Leave your feedback:</h4>
+          <div class="rating-input-row">
+            <span class="rating-label">Your Rating:</span>
+            <div id="detail-stars-row-${giftId}" class="stars-row">${starRatingHtml}</div>
           </div>
           <div class="comment-input-group">
-            <input type="text" id="detail-input-${giftId}" placeholder="Напишите комментарий...">
-            <button onclick="addDetailComment('${giftId}')">Отправить</button>
+            <input type="text" id="detail-input-${giftId}" placeholder="Write your review here...">
+            <button onclick="addDetailComment('${giftId}')">Submit Review</button>
           </div>
+        </div>
+
+        <div id="detail-comments-list-${giftId}" class="comments-list">
+          ${initialCommentsHtml || '<p class="no-reviews">No reviews yet. Be the first to leave one!</p>'}
         </div>
       </div>
     </div>
   `;
 
-  setupStarsEvents(giftId);
+  mainInterface.style.display = "none";
+  viewInterface.style.display = "none";
+  detailInterface.style.display = "block";
   window.scrollTo(0, 0);
 }
 
-// Настройка красивой анимации и кликов по звёздам
-function setupStarsEvents(giftId) {
-  const container = document.querySelector(`.stars[data-gift-id="${giftId}"]`);
-  if (!container) return;
-  const stars = container.querySelectorAll(".star");
-
-  stars.forEach((star) => {
-    star.addEventListener("mouseover", () => {
-      const currentVal = parseInt(star.getAttribute("data-value"));
-      stars.forEach((s) => {
-        if (parseInt(s.getAttribute("data-value")) <= currentVal)
-          s.classList.add("hover");
-        else s.classList.remove("hover");
-      });
-    });
-
-    star.addEventListener("mouseout", () => {
-      stars.forEach((s) => s.classList.remove("hover"));
-    });
-
-    star.addEventListener("click", () => {
-      const value = parseInt(star.getAttribute("data-value"));
-      userInteractions[giftId].rating = value;
-
-      stars.forEach((s) => {
-        if (parseInt(s.getAttribute("data-value")) <= value)
-          s.classList.add("selected");
-        else s.classList.remove("selected");
-      });
-
-      // Сохраняем изменение общей оценки в LocalStorage
-      saveToStorage();
-    });
-  });
-}
-
-// Сброс оценки
-function resetRating(giftId) {
-  userInteractions[giftId].rating = 0;
+function setDetailRating(giftId, ratingValue) {
+  userInteractions[giftId].rating = ratingValue;
   saveToStorage();
 
-  const container = document.querySelector(`.stars[data-gift-id="${giftId}"]`);
-  if (container) {
-    container.querySelectorAll(".star").forEach((s) => {
-      s.classList.remove("selected");
-      s.classList.remove("hover");
+  const starsRow = document.getElementById(`detail-stars-row-${giftId}`);
+  if (starsRow) {
+    const stars = starsRow.querySelectorAll(".star-clickable");
+    stars.forEach((star, index) => {
+      if (index < ratingValue) {
+        star.classList.add("selected");
+      } else {
+        star.classList.remove("selected");
+      }
     });
   }
 }
 
-// Добавление отзыва (привязывает текущие звёзды к тексту и сохраняет вечно)
 function addDetailComment(giftId) {
   const input = document.getElementById(`detail-input-${giftId}`);
   const text = input.value.trim();
@@ -224,37 +175,31 @@ function addDetailComment(giftId) {
 
   const currentStars = userInteractions[giftId].rating;
 
-  // Сохраняем в локальную структуру данных
   userInteractions[giftId].comments.push({
     text: text,
     stars: currentStars,
   });
 
-  // Отправляем массив данных в вечный LocalStorage браузера
   saveToStorage();
-
   input.value = "";
 
-  // Обновляем список комментариев на экране
   const list = document.getElementById(`detail-comments-list-${giftId}`);
   list.innerHTML = userInteractions[giftId].comments
     .map(
       (c) => `
-    <div class="comment-item">
-      <div class="comment-stars">${"★".repeat(c.stars)}${"☆".repeat(5 - c.stars)}</div>
-      <div class="comment-text">${c.text}</div>
-    </div>
-  `,
+      <div class="comment-item">
+        <div class="comment-stars">${"★".repeat(c.stars)}${"☆".repeat(5 - c.stars)}</div>
+        <div class="comment-text">${c.text}</div>
+      </div>
+    `,
     )
     .join("");
 }
 
-// Функция сохранения данных в браузер
 function saveToStorage() {
   localStorage.setItem("gift_reviews_data", JSON.stringify(userInteractions));
 }
 
-// Кнопка НАЗАД: с отдельной страницы идеи к списку подарков категории
 function goBackToGifts() {
   document.getElementById("main-interface").style.display = "none";
   document.getElementById("view-interface").style.display = "block";
@@ -262,10 +207,80 @@ function goBackToGifts() {
   window.scrollTo(0, 0);
 }
 
-// Кнопка НАЗАД: со списка подарков к главному меню категорий
 function goBackToCategories() {
   document.getElementById("main-interface").style.display = "block";
   document.getElementById("view-interface").style.display = "none";
   document.getElementById("detail-interface").style.display = "none";
   window.scrollTo(0, 0);
+}
+
+/* --- SHOPPING CART SYSTEM --- */
+function addToCart(title, price, image) {
+  event.stopPropagation(); // Stop navigation trigger
+  cart.push({ title, price, image });
+  localStorage.setItem("gift_cart_data", JSON.stringify(cart));
+  updateCartCount();
+  alert(`"${title}" has been added to your cart!`);
+}
+
+function updateCartCount() {
+  document.getElementById("cart-count").innerText = cart.length;
+}
+
+function toggleCart() {
+  const modal = document.getElementById("cart-modal");
+  if (modal.style.display === "none" || modal.style.display === "") {
+    renderCartItems();
+    modal.style.display = "flex";
+  } else {
+    modal.style.display = "none";
+  }
+}
+
+function renderCartItems() {
+  const list = document.getElementById("cart-items-list");
+  const totalContainer = document.getElementById("cart-total-price");
+  list.innerHTML = "";
+
+  if (cart.length === 0) {
+    list.innerHTML =
+      '<p class="empty-cart-msg">Your shopping cart is currently empty.</p>';
+    totalContainer.innerText = "$0";
+    return;
+  }
+
+  let calculatedTotal = 0;
+
+  cart.forEach((item, index) => {
+    // Parse single or average price value for accumulation
+    const priceDigits = item.price.replace(/[^0-9.-]+/g, "").split("-");
+    let numericalPrice = 0;
+    if (priceDigits.length > 0 && priceDigits[0]) {
+      numericalPrice = parseFloat(priceDigits[0]);
+    }
+    calculatedTotal += numericalPrice;
+
+    const div = document.createElement("div");
+    div.className = "cart-item-row";
+    div.innerHTML = `
+      <div class="cart-item-left">
+        ${item.image ? `<img src="${item.image}" alt="${item.title}">` : '<div class="no-img-placeholder">🎁</div>'}
+        <div>
+          <h4>${item.title}</h4>
+          <span class="cart-item-price">${item.price}</span>
+        </div>
+      </div>
+      <button class="remove-cart-item-btn" onclick="removeCartItem(${index})">Remove</button>
+    `;
+    list.appendChild(div);
+  });
+
+  totalContainer.innerText = `$${calculatedTotal.toLocaleString()}+`;
+}
+
+function removeCartItem(index) {
+  cart.splice(index, 1);
+  localStorage.setItem("gift_cart_data", JSON.stringify(cart));
+  updateCartCount();
+  renderCartItems();
 }

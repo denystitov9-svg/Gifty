@@ -1,995 +1,1302 @@
-// Огромная база данных подарков с тематическими изображениями
+// Complete Database updated to English language and Dollar ($) pricing
+// Contains 13+ gift ideas per each and every category
 const giftsData = {
   "1-12-months": [
     {
-      title: "Развивающий коврик с дугами",
-      desc: "Яркий коврик с шуршащими элементами для развития моторики.",
-      price: "1 500 - 4 000 руб.",
-      where: "Детские магазины, маркетплейсы",
+      title: "Baby Play Gym with Arches",
+      desc: "Bright activity mat with hanging toys and crinkly textures to improve motor skills.",
+      price: "$20 - $55",
+      where: "Kids stores, Toy markets",
       image:
         "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Мягкие кубики-погремушки",
-      desc: "Безопасные тканевые кубики, которые можно бросать и сжимать.",
-      price: "500 - 1 200 руб.",
-      where: "Любые маркетплейсы",
+      title: "Soft Rattle Blocks",
+      desc: "Safe fabric plush blocks that are chewable, stackable, and squeak when squeezed.",
+      price: "$8 - $18",
+      where: "Amazon, Target",
       image:
         "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Сенсорные мячики",
-      desc: "Набор мячиков разной текстуры и формы для развития тактильных ощущений.",
-      price: "400 - 900 руб.",
-      where: "Детский мир, Ozon",
+      title: "Sensory Textured Balls",
+      desc: "Set of multi-textured, uniquely shaped balls for tactile discovery and sensory growth.",
+      price: "$6 - $15",
+      where: "Local supermarkets, Amazon",
       image:
         "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Музыкальный мобиль на кроватку",
-      desc: "Вращающиеся игрушки с приятными колыбельными мелодиями и проектором.",
-      price: "1 800 - 5 000 руб.",
-      where: "Магазины для новорожденных",
-      image:
-        "https://images.unsplash.com/photo-1519689680058-324335c77eba?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Силиконовый прорезыватель-грызунок",
-      desc: "Безопасный мягкий силикон для облегчения боли при прорезывании зубов.",
-      price: "300 - 700 руб.",
-      where: "Аптеки, детские магазины",
-      image:
-        "https://images.unsplash.com/photo-1604467731651-bc00118e69e0?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Деревянная пирамидка",
-      desc: "Классическая экологичная игрушка для изучения размеров и цветов.",
-      price: "400 - 1 000 руб.",
-      where: "Маркетплейсы, деревянные игрушки",
-      image:
-        "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Ходунки-каталка со звуками",
-      desc: "Устойчивая опора для первых шагов с интерактивной панелью спереди.",
-      price: "2 500 - 6 000 руб.",
-      where: "Детские супермаркеты",
-      image:
-        "https://images.unsplash.com/photo-1596464716151-ff72db63283f?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Бизиборд или бизикуб",
-      desc: "Доска с замочками, шестеренками и кнопочками для развития логики.",
-      price: "1 200 - 4 500 руб.",
-      where: "Ярмарка Мастеров, Ozon",
-      image:
-        "https://images.unsplash.com/photo-1608463585357-19ffbe8848fb?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Мягкая книга со звуками",
-      desc: "Тканевая книжка со шуршалками, зеркальцами и хвостиками животных.",
-      price: "400 - 1 100 руб.",
-      where: "Книжные и детские магазины",
-      image:
-        "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Игрушка-грелка с вишневыми косточками",
-      desc: "Помогает успокоить животик при коликах, сохраняет тепло.",
-      price: "500 - 1 200 -руб.",
-      where: "Аптеки, маркетплейсы",
-      image:
-        "https://images.unsplash.com/photo-1559251606-c623743a6d76?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Неваляшка классическая",
-      desc: "Традиционная развивающая игрушка с приятным хрустальным звоном.",
-      price: "300 - 800 руб.",
-      where: "Детский мир",
-      image:
-        "https://images.unsplash.com/photo-1537655780520-1e392edd816a?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Дуга с игрушками на коляску",
-      desc: "Гибкая дуга со съемными погремушками для развлечения в пути.",
-      price: "1 000 - 2 500 руб.",
-      where: "Магазины колясок и аксессуаров",
-      image:
-        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Бассейн с пластиковыми шариками",
-      desc: "Сухой мини-бассейн для веселых игр и мягкого массажа тела.",
-      price: "2 000 - 5 000 руб.",
-      where: "Маркетплейсы, детские товары",
-      image:
-        "https://images.unsplash.com/photo-1576016770956-debb63d900bb?w=600&auto=format&fit=crop&q=80",
-    },
-  ],
-  "1-5-years": [
-    {
-      title: "Конструктор с крупными деталями",
-      desc: "Безопасные яркие блоки для строительства первых домиков и башен.",
-      price: "800 - 3 500 руб.",
-      where: "Любые детские магазины",
-      image:
-        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Беговел (баланс-байк)",
-      desc: "Двухколесный велосипед без педалей для обучения держать равновесие.",
-      price: "3 000 - 8 000 руб.",
-      where: "Спортивные и детские товары",
-      image:
-        "https://images.unsplash.com/photo-1596131397999-bb0ec794bb77?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Кинетический песок с песочницей",
-      desc: "Пластичный песок, который не сохнет и не пачкает руки и пол.",
-      price: "600 - 2 000 руб.",
-      where: "Магазины творчества, Ozon",
-      image:
-        "https://images.unsplash.com/photo-1534531173927-aeb928d54385?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Детская игровая кухня",
-      desc: "Мини-кухня с посудкой, раковиной и плитой со светозвуковыми эффектами.",
-      price: "2 500 - 10 000 руб.",
-      where: "Детские гипермаркеты",
+      title: "Musical Crib Mobile",
+      desc: "Rotating hanging toys with gentle lullaby melodies and a night light projector.",
+      price: "$25 - $65",
+      where: "Newborn boutique stores",
       image:
         "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Пальчиковые краски",
-      desc: "Безопасные смываемые краски для рисования самыми маленькими ручками.",
-      price: "300 - 800 руб.",
-      where: "Канцтовары, детские магазины",
+      title: "Silicone Teething Teether",
+      desc: "Ergonomic cooling teething toy made of BPA-free medical silicone.",
+      price: "$5 - $12",
+      where: "Pharmacies, Walmart",
       image:
-        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Сортер «Умный дом»",
-      desc: "Игрушка с отверстиями разных геометрических форм для тренировки логики.",
-      price: "700 - 1 800 -руб.",
-      where: "Маркетплейсы",
+      title: "Interactive Musical Drum",
+      desc: "Light-up dynamic drum with sound effects to practice hand-eye coordination.",
+      price: "$15 - $30",
+      where: "Toy stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Интерактивная мягкая игрушка",
-      desc: "Питомец, который умеет ходить, лаять или повторять слова за ребенком.",
-      price: "1 500 - 4 500 руб.",
-      where: "Детский мир",
+      title: "Plush Nightlight Projector",
+      desc: "Cute stuffed animal that projects a starry night sky on the ceiling with soothing sounds.",
+      price: "$18 - $40",
+      where: "Gift shops, Baby stores",
       image:
-        "https://images.unsplash.com/photo-1559251606-c623743a6d76?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Трехколесный самокат со светящимися колесами",
-      desc: "Устойчивый легкий самокат с регулировкой руля по высоте.",
-      price: "1 800 - 4 000 руб.",
-      where: "Спортивные магазины",
+      title: "Tumbler Wobble Toy",
+      desc: "Classic self-righting roly-poly toy with pleasant internal chime sounds.",
+      price: "$7 - $16",
+      where: "Traditional toy outlets",
       image:
-        "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Магнитный конструктор",
-      desc: "Детали соединяются под любым углом магнитами, строятся 3D фигуры.",
-      price: "1 200 - 5 000 руб.",
-      where: "Ozon, Wildberries",
+      title: "Crinkle Fabric Soft Book",
+      desc: "Washable cloth book filled with squeaky pages, mirrors, and various tail textures.",
+      price: "$8 - $15",
+      where: "Bookstores, Target",
       image:
-        "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Детская палатка-домик (Вигвам)",
-      desc: "Уютный собственный уголок для тайных игр с мягким ковриком.",
-      price: "1 500 - 4 000 руб.",
-      where: "Интерьерные детские лавки",
+      title: "Wooden First Shape Sorter",
+      desc: "Eco-friendly natural wood sorting box with large colorful geometric blocks.",
+      price: "$12 - $28",
+      where: "Eco toy shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1564324938314-6811736d0752?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Водный коврик для рисования маркером",
-      desc: "Проявляются рисунки от обычной воды, а при высыхании исчезают.",
-      price: "500 - 1 200 руб.",
-      where: "Маркетплейсы",
+      title: "Suction Cup Highchair Toys",
+      desc: "Spinning interactive wheel that attaches securely to any smooth feeding tray surface.",
+      price: "$10 - $22",
+      where: "Walmart, Baby care zones",
       image:
-        "https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1515488042361-404e9250afef?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Музыкальный коврик-пианино",
-      desc: "Напольное пианино, на клавиши которого нужно наступать ножками.",
-      price: "1 000 - 2 500 руб.",
-      where: "Магазины электроники и игрушек",
+      title: "Baby Bath Floating Ducks Set",
+      desc: "Set of mold-free floating colorful water critters with heat-sensitive warning indicators.",
+      price: "$6 - $14",
+      where: "Hypermarkets, online shops",
       image:
-        "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор пластилина с формочками",
-      desc: "Мягкое тесто для лепки, которое вкусно пахнет и не липнет.",
-      price: "400 - 1 500 руб.",
-      where: "Супермаркеты товаров для хобби",
+      title: "Push & Crawl Walking Toy",
+      desc: "Moving interactive toy that roll forward encouraging babies to crawl and move along.",
+      price: "$14 - $35",
+      where: "Toy markets, Amazon",
       image:
-        "https://images.unsplash.com/photo-1606103942004-984439c894aa?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format&fit=crop&q=80",
     },
   ],
-  "6-9-years": [
+  "1-5-years": [
     {
-      title: "Конструктор LEGO City / Friends",
-      desc: "Классические наборы для сборки транспорта, зданий и игровых сценок.",
-      price: "1 200 - 7 000 руб.",
-      where: "Сертифицированные магазины конструкторов",
+      title: "Jumbo Building Blocks Set",
+      desc: "Safe and colorful interlocking bricks for young kids to construct houses and towers.",
+      price: "$15 - $45",
+      where: "Toy Stores, Walmart",
       image:
         "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Настольная игра «Доббль» или «Барабашка»",
-      desc: "Веселые динамичные игры на скорость реакции и внимательность.",
-      price: "800 - 1 800 -руб.",
-      where: "Мосигра, Hobby Games",
+      title: "Kids Balance Bike",
+      desc: "Lightweight beginner bike without pedals to master balance and steering early on.",
+      price: "$40 - $90",
+      where: "Sporting goods stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Трюковой самокат",
-      desc: "Прочный самокат с фиксированным рулем без складного механизма для прыжков.",
-      price: "3 500 - 10 000 руб.",
-      where: "Скейтшопы, спортивные маркетплейсы",
+      title: "Kinetic Sandbox Table",
+      desc: "Mess-free sensory indoor play sand that sticks to itself instead of kids' hands.",
+      price: "$20 - $50",
+      where: "Craft stores, Target",
       image:
-        "https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Роликовые коньки раздвижные",
-      desc: "Удобные ролики, размер которых можно увеличивать по мере роста ноги.",
-      price: "2 500 - 6 000 руб.",
-      where: "Спортмастер, Декатлон",
+      title: "Magnetic Building Tiles",
+      desc: "3D clear geometric magnetic shapes for building creative architectural palaces.",
+      price: "$25 - $75",
+      where: "Educational toy stores",
       image:
-        "https://images.unsplash.com/photo-1591518844811-002d44f8007a?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Машина на радиоуправлении",
-      desc: "Быстрый внедорожник-перевертыш, преодолевающий любые препятствия.",
-      price: "1 500 - 5 000 -руб.",
-      where: "Магазины радиоуправляемых моделей",
+      title: "Interactive Talking Globe",
+      desc: "Fun junior globe with a stylus touch-pen that sings songs and names countries.",
+      price: "$30 - $65",
+      where: "Learning toy centers",
       image:
-        "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор для создания украшений / мыла",
-      desc: "Большой творческий комплект со всем необходимым для поделок своими руками.",
-      price: "500 - 1 500 руб.",
-      where: "Магазины Леонардо",
+      title: "Wooden Train Track Station",
+      desc: "Classic expansive wooden railway system with engine cars, bridges, and signs.",
+      price: "$25 - $80",
+      where: "IKEA, Specialized toy markets",
       image:
-        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Детский микроскоп",
-      desc: "Настоящий оптический прибор с готовыми слайдами для изучения микромира.",
-      price: "2 000 - 6 000 руб.",
-      where: "Магазины оптики, маркетплейсы",
+      title: "Water Doodle Drawing Mat",
+      desc: "Large canvas mat where children draw using magic water pens with zero stain risks.",
+      price: "$12 - $26",
+      where: "Amazon, Supermarkets",
       image:
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Световой планшет для рисования песком",
-      desc: "Стол с подсветкой и специальным очищенным кварцевым песком для анимации.",
-      price: "1 800 - 4 000 руб.",
-      where: "Сайты производителей",
+      title: "Doctor Roleplay Medical Kit",
+      desc: "Doctor suitcase outfit featuring stethoscope with realistic simulated heartbeat sound.",
+      price: "$15 - $35",
+      where: "Walmart, Fantasy dress up shops",
       image:
-        "https://images.unsplash.com/photo-1603481588273-2f908a9a7a1b?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Бластер NERF",
-      desc: "Игрушечное оружие, стреляющее безопасными мягкими поролоновыми стрелами.",
-      price: "1 000 - 4 500 руб.",
-      where: "Детский мир, Ozon",
+      title: "Foldable Indoor Toddler Tent",
+      desc: "Cozy private playhouse teepee for kids bedrooms, perfect for fairy tale readings.",
+      price: "$22 - $55",
+      where: "Home decor shops, Target",
       image:
-        "https://images.unsplash.com/photo-1605142859862-978be7eff9af?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Интерактивный глобус с голосовым гидом",
-      desc: "Рассказывает интересные факты о странах, животных и географии при касании указкой.",
-      price: "3 000 - 7 000 руб.",
-      where: "Магазины умных игрушек",
+      title: "Adjustable Basketball Hoop",
+      desc: "Junior size indoor/outdoor freestanding basket ring set with miniature soft balls.",
+      price: "$35 - $70",
+      where: "Sport stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "3D-ручка с набором пластика",
-      desc: "Гаджет, позволяющий рисовать горячим безопасным пластиком прямо в воздухе.",
-      price: "1 200 - 3 000 руб.",
-      where: "Магазины гаджетов",
+      title: "Electronic Piano Keyboard Mat",
+      desc: "Giant floor step-on musical dance mat with various instrument voice modes.",
+      price: "$18 - $40",
+      where: "Party entertainment shops",
       image:
-        "https://images.unsplash.com/photo-1581092921461-eab62e97a780?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор фокусника с инструкцией",
-      desc: "Коробка с реквизитом для демонстрации иллюзий и развития артистизма.",
-      price: "600 - 2 000 руб.",
-      where: "Детские магазины",
+      title: "Washable Finger Paints Studio",
+      desc: "Non-toxic organic color paint tubes with sponges and thick papers for toddlers.",
+      price: "$10 - $24",
+      where: "Art hobby shops",
       image:
-        "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Большая книга комиксов или иллюстрированная энциклопедия",
-      desc: "Подарочное яркое издание про космос, динозавров или супергероев.",
-      price: "700 - 2 500 руб.",
-      where: "Книжные магазины типа Лабиринт",
+      title: "Plush Interactive Puppy Robot",
+      desc: "Electronic soft puppy that walks, barks, and wags its tail upon clapping.",
+      price: "$20 - $45",
+      where: "Toy shops, Walmart",
       image:
-        "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
   ],
-  "10-13-years": [
+  "6-10-years": [
     {
-      title: "Электронный конструктор «Знаток»",
-      desc: "Позволяет без пайки собирать радиоприемники, сигнализации и датчики.",
-      price: "2 000 - 6 500 руб.",
-      where: "Чип и Дип, маркетплейсы",
+      title: "App-Controlled Coding Robot",
+      desc: "Fun beginner robotics kit to learn STEM principles and introductory block logic.",
+      price: "$45 - $110",
+      where: "Tech outlets, Amazon",
       image:
-        "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Программируемый робот",
-      desc: "Робот, который управляется со смартфона и программируется на Scratch.",
-      price: "4 000 - 15 000 руб.",
-      where: "Магазины робототехники",
+      title: "Kids Instant Print Camera",
+      desc: "Digital pocket camera that prints out black-and-white photos immediately onto thermal paper.",
+      price: "$30 - $65",
+      where: "Electronics departments",
       image:
-        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Сложная настольная игра (например, Каркассон или Колонизаторы)",
-      desc: "Стратегические игры для увлекательных вечеров с семьей или друзьями.",
-      price: "2 000 - 4 500 руб.",
-      where: "Настольные вселенные Hobby Games",
+      title: "Starlight Night Astronomy Telescope",
+      desc: "Beginner lens gear set up to explore craters on the moon and bright stars.",
+      price: "$55 - $130",
+      where: "Discovery shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1585504198199-20277593b94f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Беспроводные наушники",
-      desc: "Стильные накладные или TWS-наушники с хорошим басом и подсветкой.",
-      price: "1 500 - 6 000 руб.",
-      where: "Магазины цифровой техники",
+      title: "Magician Essential Illusion Kit",
+      desc: "Prop setup case with secret tricks manual to host family illusion shows.",
+      price: "$15 - $35",
+      where: "Toy boutique stores",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Rock Tumbler Science Studio",
+      desc: "Mechanical kit that polishes rough stones into glossy dazzling gemstones.",
+      price: "$35 - $70",
+      where: "Educational toy hubs",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Illuminated Mechanical Globe",
+      desc: "3D puzzle map displaying detailed constellations when bedroom lights turn off.",
+      price: "$25 - $60",
+      where: "Hobby shops, Target",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Multiplayer Laser Tag Set",
+      desc: "Vests and laser blaster guns set for dynamic tactical games in the backyard.",
+      price: "$40 - $95",
+      where: "Sports retail rows",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Creative Pottery Wheel Studio",
+      desc: "Kid-safe motorized turning wheel with air-dry clay mud to form custom vases.",
+      price: "$28 - $55",
+      where: "Art supply supermarkets",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Durable Outdoor Walkie Talkies",
+      desc: "Long-range hand radios with privacy channels for neighborhood exploration adventures.",
+      price: "$20 - $45",
+      where: "Outdoor goods sections",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "3D Printing Pen with PLA",
+      desc: "Heated nozzle tool drawing plastic shapes into mid-air 3D physical figures.",
+      price: "$25 - $60",
+      where: "Tech gadget markets",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Ant Farm Educational Habitat",
+      desc: "Transparent gel castle tray allowing clear view of ants mining real sand tunnels.",
+      price: "$15 - $30",
+      where: "Nature specialty kiosks",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Pro LED Light Skate Scooter",
+      desc: "Sturdy lean-to-steer structure framework with kinetic glowing wheels.",
+      price: "$35 - $80",
+      where: "Walmart, Sport centers",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Junior Archery Bow & Target Set",
+      desc: "Safe flexible fiber bow firing suction cup tips at high visibility stand boards.",
+      price: "$22 - $50",
+      where: "Toy sections, Target",
+      image:
+        "https://images.unsplash.com/photo-1530641042946-a79b7f7c4735?w=600&auto=format&fit=crop&q=80",
+    },
+  ],
+  "11-15-years": [
+    {
+      title: "HD Camera Quadcopter Drone",
+      desc: "Stable entry-level drone with auto-hover tech and 1080p aerial camera view options.",
+      price: "$50 - $120",
+      where: "Gadget shops, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Bluetooth Pocket Photo Printer",
+      desc: "Inkless thermal printing pod making instant polaroid-style stickers from phone galleries.",
+      price: "$60 - $110",
+      where: "Tech stores, Best Buy",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Electronic Drum Training Pad",
+      desc: "Roll-up silicone pad layout with stereo speaker plug outputs for silent drum practice.",
+      price: "$35 - $85",
+      where: "Music instrument stores",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Escape Room Tabletop Boardgame",
+      desc: "Challenging riddle card box system requiring clever teamwork decoding under 60 minutes.",
+      price: "$20 - $45",
+      where: "Boardgame shops, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Digital Graphic Drawing Tablet",
+      desc: "Pressure sensitive plate linking onto computers for digital sketches and animation art.",
+      price: "$40 - $90",
+      where: "Computer retailers",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "DIY Hydroponic Plant Terrarium",
+      desc: "Indoor biology station with LED growth lamps for nurturing exotic house flora.",
+      price: "$30 - $70",
+      where: "Eco boutiques, Target",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Bluetooth Karaoke Microphone",
+      desc: "Wireless mic handheld setup with built-in pitch modulators and voice reverb settings.",
+      price: "$18 - $40",
+      where: "Gift shops, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Advanced Architecture 3D Wooden Kit",
+      desc: "Intricate laser-cut mechanical puzzle building working pendulum grandfather clocks.",
+      price: "$25 - $55",
+      where: "Hobbycraft outlets",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "RGB LED App Strip Lights (50ft)",
+      desc: "Flexible smart glow tape to mount around ceilings controlled via smartphone sound tracks.",
+      price: "$15 - $35",
+      where: "Home fixture centers",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Premium Skatepark Skateboard",
+      desc: "Seven-ply maple deck wood with smooth rolling pro bearings for freestyle trick practice.",
+      price: "$45 - $95",
+      where: "Local skate shops, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Sneaker Custom Painting Art Set",
+      desc: "Special acrylic fabric paint bottles designed to revamp canvas trainers with original designs.",
+      price: "$22 - $50",
+      where: "Art craft studios",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Retro Pixel Art Bluetooth Speaker",
+      desc: "Retro monitor desk unit with configurable retro pixel animation screens.",
+      price: "$50 - $90",
+      where: "Gadget boutiques",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Youth Professional Volleyball Kit",
+      desc: "Regulation size network web strings matching pro weight beach leather balls.",
+      price: "$30 - $65",
+      where: "Sporting supermarkets",
+      image:
+        "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=600&auto=format&fit=crop&q=80",
+    },
+  ],
+  "16-18-years": [
+    {
+      title: "Active Noise Cancelling Earbuds",
+      desc: "Wireless pods blocking background ambient noise with immersive deep acoustic feedback.",
+      price: "$40 - $130",
+      where: "Electronics stores",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Cinema Night Pocket Projector",
+      desc: "Ultra-compact projector bean casting full streaming video files up to a 100-inch wall display.",
+      price: "$70 - $180",
+      where: "Tech gadgets markets",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Vlogging Ring Light & Tripod",
+      desc: "Dimmable multi-color halo stand with universal phone clip bracket adapters for streaming.",
+      price: "$20 - $50",
+      where: "Camera supply stores",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Instant Polaroid Film Camera",
+      desc: "Classic retro analog camera that snaps physical full-color glossy print souvenirs.",
+      price: "$65 - $120",
+      where: "Mall department stores",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Premium Fabric Canvas Hammock",
+      desc: "Heavyweight nylon travel suspension net setup fitting custom backyard trees.",
+      price: "$18 - $45",
+      where: "Tourism tourism centers",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Wireless Qi Fast-Charging Station",
+      desc: "3-in-1 tidy charging docking pad holding phones, smartwatches, and pods simultaneously.",
+      price: "$25 - $60",
+      where: "Amazon, Target",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Classic Wooden Acoustic Ukulele",
+      desc: "Four-string natural mahogany wood build, perfect for beginners learning chords.",
+      price: "$35 - $75",
+      where: "Music instrument centers",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Urban Water-resistant Backpack",
+      desc: "Sleek tech rucksack featuring concealed anti-theft compartments and USB charging routing slots.",
+      price: "$30 - $70",
+      where: "Apparel outfit retailers",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Natural Soy Scented Candle Studio",
+      desc: "DIY craft assortment package with essential oil drops creating home aromatherapy items.",
+      price: "$22 - $45",
+      where: "Craft hobby shops",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Multi-game Desk Foosball Table",
+      desc: "Compact tabletop football platform providing fast fun matches with friends.",
+      price: "$45 - $90",
+      where: "Toy recreation outlets",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Stainless Insulated Travel Tumbler",
+      desc: "Double-walled steel flask keeping cold beverages chilled for 24 hours.",
+      price: "$20 - $45",
+      where: "Walmart, online stores",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Calligraphy & Bullet Journal Kit",
+      desc: "Beautifully bound dot notebooks matching vibrant dual-tip brush water ink pens.",
+      price: "$15 - $35",
+      where: "Stationery shops, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Streaming Platform Gift Card",
+      desc: "Digital voucher subscription adding credit keys towards movies, series or audio media.",
+      price: "$15 - $100",
+      where: "Web checkout, grocery racks",
+      image:
+        "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=600&auto=format&fit=crop&q=80",
+    },
+  ],
+  "19-25-years": [
+    {
+      title: "Mechanical Office Keyboard",
+      desc: "Customizable clicking mechanical deck layout raising workplace typing speed comfort.",
+      price: "$60 - $160",
+      where: "Tech shops, Amazon",
       image:
         "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Укулеле (маленькая гавайская гитара)",
-      desc: "Легкий в освоении четырехструнный инструмент красивой расцветки.",
-      price: "1 800 - 4 500 руб.",
-      where: "Музыкальные магазины",
+      title: "Smart Health Fitness Tracker",
+      desc: "Sleek wrist band tracking pulse rates, sleep schedules, and exercise statistics on apps.",
+      price: "$35 - $120",
+      where: "Sports tech centers",
       image:
-        "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор маркеров для скетчинга (от 80 шт)",
-      desc: "Профессиональные спиртовые двухсторонние фломастеры в удобной сумке.",
-      price: "1 000 - 3 500 руб.",
-      where: "Товары для художников, Ozon",
+      title: "Electric Espresso Coffee Maker",
+      desc: "Compact kitchen machine extracting delicious thick italian style morning espresso shots.",
+      price: "$50 - $140",
+      where: "Home appliance markets",
       image:
-        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Экшн-камера начального уровня",
-      desc: "Для съемки блогов, катания на велике, самокате и первых видеороликов.",
-      price: "3 000 - 8 000 руб.",
-      where: "Электроника, AliExpress",
+      title: "Ergonomic Memory Foam Cushion",
+      desc: "Orthopedic pressure relief pad matching gaming seats or study desks.",
+      price: "$25 - $55",
+      where: "Furniture department rows",
       image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Скейтборд или пенни-борд",
-      desc: "Яркая прочная пластиковая или деревянная доска на мягких колесах.",
-      price: "1 500 - 5 000 руб.",
-      where: "Спортивные магазины",
+      title: "Compact Massage Muscle Gun",
+      desc: "Deep tissue percussive vibrating head relieving lactic pain soreness after gym sets.",
+      price: "$40 - $95",
+      where: "Wellness tech catalogs",
       image:
-        "https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Детские смарт-часы с GPS-трекером",
-      desc: "Позволяют звонить, отправлять голосовые сообщения и отслеживать локацию.",
-      price: "2 000 - 5 500 -руб.",
-      where: "Салоны сотовой связи",
+      title: "Minimalist RFID Leather Wallet",
+      desc: "Slim aviation aluminum core card sleeve wrapped in premium cattle hide textures.",
+      price: "$20 - $50",
+      where: "Fashion clothing outlets",
       image:
-        "https://images.unsplash.com/photo-1544111892-4a901524e6c9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Кольцевая светодиодная лампа со штативом",
-      desc: "Идеальный ровный свет для видеосъемки, селфи и стримов.",
-      price: "1 000 - 2 800 -руб.",
-      where: "Маркетплейсы электроники",
+      title: "Professional Cocktail Shaker Set",
+      desc: "Polished steel bar gear kit along with recipe instruction booklets.",
+      price: "$25 - $60",
+      where: "Kitchen accessory boutiques",
       image:
-        "https://images.unsplash.com/photo-1619946794135-5bc917a27793?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Кубик Рубика профессиональный (магнитный)",
-      desc: "Скоростной кубик для спидкубинга с мягким и быстрым вращением граней.",
-      price: "600 - 2 500 руб.",
-      where: "Специализированные интернет-магазины головоломок",
+      title: "Natural Bamboo Bed Laptop Stand",
+      desc: "Folding desktop plate equipped with thermal fan grilles and side cup slot indents.",
+      price: "$22 - $45",
+      where: "Target, office catalog lines",
       image:
-        "https://images.unsplash.com/photo-1591951425328-48c1fe2114cd?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Детский телескоп",
-      desc: "Оптический прибор для наблюдения за кратерами Луны и яркими звездами.",
-      price: "4 000 - 12 000 руб.",
-      where: "Сайты оптической техники «Четыре глаза»",
+      title: "Vibrant Cocktail Neon Wall Lamp",
+      desc: "Glowing ambient decoration sign to personalize living room wall fixtures.",
+      price: "$30 - $70",
+      where: "Home design studios",
       image:
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Большой коврик для мыши и клавиатуры с RGB подсветкой",
-      desc: "Огромный игровой коврик на весь рабочий стол со светящимися краями.",
-      price: "800 - 2 000 руб.",
-      where: "Компьютерные магазины",
+      title: "Premium Matcha Tea Whisk Set",
+      desc: "Traditional ceramic bowl bundled along bamboo whisks to steep Japanese tea.",
+      price: "$25 - $50",
+      where: "Gourmet tea distributors",
       image:
-        "https://images.unsplash.com/photo-1616440347437-b1c73416efc2?w=600&auto=format&fit=crop&q=80",
-    },
-  ],
-  "14-16-years": [
-    {
-      title: "Графический планшет для рисования",
-      desc: "Подключается к компьютеру или смартфону, развивает навыки цифрового арта.",
-      price: "3 000 - 10 000 руб.",
-      where: "DNS, Ситилинк",
-      image:
-        "https://images.unsplash.com/photo-1561154464-82e9adf32764?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Портативная Bluetooth колонка",
-      desc: "Мощная влагозащищенная колонка для прослушивания музыки в компании.",
-      price: "2 000 - 12 000 руб.",
-      where: "Магазины акустики, JBL",
+      title: "Waterproof Bluetooth Travel Speaker",
+      desc: "Rugged clip soundbox blasting strong bass response inside beach environments.",
+      price: "$35 - $80",
+      where: "Best Buy, electronic stores",
       image:
-        "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Портативный аккумулятор (Power Bank) высокой емкости",
-      desc: "Незаменимый гаджет, чтобы телефон и наушники не сели в неподходящий момент.",
-      price: "1 200 - 4 000 руб.",
-      where: "Салоны связи, маркетплейсы",
+      title: "Boardgame Fantasy Strategy Edition",
+      desc: "Immersive multi-hour civilization kingdom tabletop layout requiring complex resource trades.",
+      price: "$40 - $85",
+      where: "Boardgame hobby centers",
       image:
-        "https://images.unsplash.com/photo-1609592424109-dd9892f1b177?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор для блогера 3-в-1",
-      desc: "Штатив, петличный микрофон и дополнительный свет для качественных роликов.",
-      price: "1 500 - 5 000 руб.",
-      where: "Ozon, Wildberries",
+      title: "Apparel Store Shopping Voucher",
+      desc: "Digital code pass adding immediate spending credit across fashion retail sites.",
+      price: "$25 - $150",
+      where: "Online delivery checkouts",
       image:
-        "https://images.unsplash.com/photo-1530731141654-59610c38bf85?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Худи оверсайз со стильным принтом",
-      desc: "Модная качественная одежда с персонажем аниме, любимой группой или минималистичным лого.",
-      price: "2 000 - 6 000 руб.",
-      where: "Магазины уличной одежды",
-      image:
-        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Скретч-карта мира или постеров",
-      desc: "Большой стильный плакат, на котором монеткой стираются открытые места.",
-      price: "600 - 1 500 руб.",
-      where: "Магазины подарков",
-      image:
-        "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Фитнес-браслет",
-      desc: "Умный браслет с шагомером, пульсометром и уведомлениями из соцсетей.",
-      price: "2 000 - 4 500 руб.",
-      where: "М.Видео, Эльдорадо",
-      image:
-        "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Камера моментальной печати (Instax)",
-      desc: "Позволяет мгновенно получать бумажные фотографии-карточки на память.",
-      price: "7 000 - 15 000 руб.",
-      where: "Магазины фототехники",
-      image:
-        "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Стильный рюкзак с защитой от краж",
-      desc: "Городской рюкзак со скрытыми молниями и встроенным USB-портом.",
-      price: "1 800 - 5 000 руб.",
-      where: "Сайты сумок и аксессуаров",
-      image:
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Кружка-термос или термостакан",
-      desc: "Красивый металлический стакан, удерживающий тепло чая или кофе.",
-      price: "600 - 2 000 руб.",
-      where: "Кофейни, посудные лавки",
-      image:
-        "https://images.unsplash.com/photo-1577937927133-66ef06acdf18?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Светодиодная лента (Neon/RGB) в комнату",
-      desc: "Длинная гибкая лента с пультом для создания атмосферной неоновой подсветки.",
-      price: "500 - 1 800 -руб.",
-      where: "Строительные магазины, AliExpress",
-      image:
-        "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Пазл на 1500+ деталей со сложным рисунком",
-      desc: "Огромная картина, сборка которой займет много увлекательных вечеров.",
-      price: "500 - 1 800 -руб.",
-      where: "Книжные магазины",
-      image:
-        "https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Подарочный сертификат на квест с друзьями",
-      desc: "Эмоции в подарок: прохождение командного хоррор или логического квеста.",
-      price: "3 000 - 6 000 руб.",
-      where: "Организаторы квестов «Клаустрофобия»",
-      image:
-        "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
     },
   ],
-  "17-20-years": [
+  "26-35-years": [
     {
-      title: "Проигрыватель виниловых пластинок",
-      desc: "Стильный ретро-проигрыватель в виде чемоданчика для любителей теплого звука.",
-      price: "4 500 - 15 000 руб.",
-      where: "Аудиофильские магазины, Республика",
+      title: "Electric Wine Opener Station",
+      desc: "Automatic charging foil cutter corkscrew extracting bottles cleanly in seconds.",
+      price: "$25 - $60",
+      where: "Kitchen stores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Кожаный картхолдер или кошелек ручной работы",
-      desc: "Качественный долговечный аксессуар из натуральной кожи с гравировкой.",
-      price: "1 500 - 4 500 руб.",
-      where: "Кожевенные мастерские, Ярмарка мастеров",
+      title: "Smart Multi-room Speaker Pod",
+      desc: "Voice-assistant smart home speaker managing lighting switches and playing audio catalogs.",
+      price: "$50 - $150",
+      where: "Tech hardware centers",
       image:
-        "https://images.unsplash.com/photo-1627123424574-724758594e93?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Увлажнитель воздуха с ароматизацией",
-      desc: "Ультразвуковой увлажнитель с мягкой ночной подсветкой и отсеком для масел.",
-      price: "1 200 - 4 000 руб.",
-      where: "Бытовая техника",
+      title: "Premium Chef Knife Leather Roll",
+      desc: "High-carbon forged steel slicing tool fitting professional culinary tasks.",
+      price: "$45 - $120",
+      where: "Cutlery boutique outlets",
       image:
-        "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Компактный домашний проектор",
-      desc: "Подключается к телефону и проецирует фильмы прямо на стену или потолок.",
-      price: "4 000 - 15 000 руб.",
-      where: "Магазины электроники",
+      title: "Acoustic Vinyl Record Player",
+      desc: "Classic belt-driven turntable platform featuring high fidelity audio speaker boxes.",
+      price: "$70 - $220",
+      where: "Music records distributors",
       image:
-        "https://images.unsplash.com/photo-1535016120720-40c646be5580?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор для выращивания экзотического растения",
-      desc: "Горшочек, грунт и семена бонсай или хищной мухоловки для домашнего садоводства.",
-      price: "400 - 1 200 руб.",
-      where: "Ботанические лавки",
+      title: "Ultrasonic Home Humidifier Diffuser",
+      desc: "Sleek wooden grain texture mister emitting refreshing cold aromatherapy vapors.",
+      price: "$22 - $55",
+      where: "Wellness home departments",
       image:
-        "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Сертификат на картинг или полет в аэротрубе",
-      desc: "Экстремальное развлечение для мощного выброса адреналина.",
-      price: "2 500 - 6 000 руб.",
-      where: "Экстрим-клубы",
+      title: "Compact Leather Travel Tech Pouch",
+      desc: "Organizer layout keeping charging brick cords and adapters safely packed.",
+      price: "$20 - $45",
+      where: "Leather accessories rows",
       image:
-        "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Электрическая звуковая зубная щетка",
-      desc: "Полезный технологичный подарок для идеального ухода за здоровьем зубов.",
-      price: "2 000 - 7 000 руб.",
-      where: "Аптеки, DNS",
+      title: "Gourmet Hot Sauce Master Box",
+      desc: "Curated variety box containing premium habanero spice sauce bottles.",
+      price: "$25 - $50",
+      where: "Specialty food emporiums",
       image:
-        "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Настольное зеркало с LED-подсветкой",
-      desc: "Сенсорное косметическое зеркало с регулировкой яркости свечения.",
-      price: "1 000 - 3 000 руб.",
-      where: "Косметические сети типа Золотое Яблоко",
+      title: "Shiatsu Heated Neck Massager",
+      desc: "Vibrating heating pad belt utilizing rotational kneading nodes to relax shoulder knots.",
+      price: "$35 - $75",
+      where: "Pharmacy health zones, Amazon",
       image:
-        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Умная колонка с голосовым ассистентом",
-      desc: "Колонка с Алисой или Марусей, включающая треки, ставящая будильники и управляющая домом.",
-      price: "4 000 - 9 000 руб.",
-      where: "Яндекс Маркет, электроника",
+      title: "Cast Iron Dutch Oven Pot",
+      desc: "Heavy porcelain glazed stew cooking casserole vessel lasting lifetime usage cycles.",
+      price: "$45 - $110",
+      where: "Kitchenware department rows",
       image:
-        "https://images.unsplash.com/photo-1543512214-318c7553f230?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор премиального чая или кофе в деревянной коробке",
-      desc: "Эстетичный набор ароматных сортов с красивым заварником в комплекте.",
-      price: "1 500 - 4 000 руб.",
-      where: "Кантата, Чайные бутики",
+      title: "Car Dashcam 4K Recording Kit",
+      desc: "Front windshield monitoring lens featuring night-vision tracking crash sensors.",
+      price: "$60 - $140",
+      where: "Automotive upgrade kiosks",
       image:
-        "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Электронная книга",
-      desc: "Гаджет с безопасным для глаз экраном E-Ink для чтения сотен книг без подзарядки.",
-      price: "6 000 - 18 000 руб.",
-      where: "Магазины цифровой техники",
+      title: "Craft Beer Home Tasting Kit",
+      desc: "Set of diverse custom shaped craft beer glasses complete with slate server coasters.",
+      price: "$24 - $48",
+      where: "Souvenir gift shops",
       image:
-        "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Плед с рукавами",
-      desc: "Невероятно уютный теплый флисовый плед, не сковывающий движения рук.",
-      price: "1 200 - 2 500 руб.",
-      where: "Магазины домашнего уюта",
+      title: "Scratch-off World Travel Map",
+      desc: "Large dark gold foil wall poster to document global destination paths.",
+      price: "$15 - $35",
+      where: "Bookstores, Amazon",
       image:
-        "https://images.unsplash.com/photo-1580301762395-21ce84d00bc6?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Подушка с эффектом памяти (Memory Foam)",
-      desc: "Ортопедическая анатомическая подушка для идеального и глубокого сна.",
-      price: "1 500 - 4 500 руб.",
-      where: "Магазины матрасов (Аскона)",
+      title: "Spa Experience Gift Voucher",
+      desc: "Recreational card voucher redeeming therapeutic full-body skin massage packages.",
+      price: "$50 - $200",
+      where: "Local spa networks, online",
       image:
-        "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&auto=format&fit=crop&q=80",
-    },
-  ],
-  "21-24-years": [
-    {
-      title: "Массажная подушка шиацу для шеи и спины",
-      desc: "Отличный гаджет с подогревом для расслабления мышц после работы за компьютером.",
-      price: "1 800 - 4 500 руб.",
-      where: "Магазины медтехники, маркетплейсы",
-      image:
-        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Капельная или рожковая кофеварка",
-      desc: "Для быстрого приготовления бодрящего кофе по утрам в собственной квартире.",
-      price: "2 500 - 12 000 -руб.",
-      where: "Бытовая техника",
-      image:
-        "https://images.unsplash.com/photo-1517142089942-ba376ce32a2e?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Фитнес-коврик премиум-класса с разметкой",
-      desc: "Нескользящий плотный коврик для домашних тренировок, растяжки или йоги.",
-      price: "1 500 - 4 000 руб.",
-      where: "Спортивные брендовые лавки",
-      image:
-        "https://images.unsplash.com/photo-1592432678016-e910b452f9a2?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Набор профессиональных поварских ножей на подставке",
-      desc: "Стильный и незаменимый элемент на кухне для тех, кто начинает готовить сам.",
-      price: "3 000 - 10 000 руб.",
-      where: "Магазины посуды",
-      image:
-        "https://images.unsplash.com/photo-1593630745672-88f5664177b9?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Вертикальный отпариватель для одежды",
-      desc: "Быстро и бережно разглаживает рубашки, платья и пиджаки мощным паром.",
-      price: "2 000 - 8 000 руб.",
-      where: "Магазины электроники",
-      image:
-        "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Стильный городской рюкзак (например, XD Design)",
-      desc: "Анатомический лаконичный рюкзак с защитой от разрезов и карманом для ноутбука.",
-      price: "4 000 - 11 000 руб.",
-      where: "Фирменные магазины рюкзаков",
-      image:
-        "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Беспроводной автомобильный компрессор",
-      desc: "Компактный автогаджет с экраном для автоматической подкачки шин нажатием кнопки.",
-      price: "2 000 - 4 500 руб.",
-      where: "Автомагазины",
-      image:
-        "https://images.unsplash.com/photo-1486006920555-c77dce18193b?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Брендовая парфюмерия / Сертификат",
-      desc: "Элитный селективный парфюм или карта для его самостоятельного подбора.",
-      price: "4 000 - 15 000 руб.",
-      where: "Лэтуаль, Рив Гош",
-      image:
-        "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Подарочное издание кулинарной книги мирового шефа",
-      desc: "Огромная вдохновляющая иллюстрированная книга с пошаговыми рецептами высокой кухни.",
-      price: "1 500 - 4 000 руб.",
-      where: "Крупные книжные",
-      image:
-        "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Механическая клавиатура с кастомными свитчами",
-      desc: "Клавиатура с невероятно приятным звуком клика (тайпингом) и подсветкой клавиш.",
-      price: "3 500 - 12 000 руб.",
-      where: "Geekboards, маркетплейсы",
-      image:
-        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Набор бокалов из изысканного богемского стекла",
-      desc: "Набор стильной геометрии для вина, коктейлей или шампанского.",
-      price: "1 500 - 4 500 руб.",
-      where: "Стокманн, интерьерные лавки",
-      image:
-        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Внешний SSD накопитель (1 ТБ)",
-      desc: "Сверхскоростной легкий диск для быстрого переноса важных рабочих файлов и фото.",
-      price: "5 000 - 11 000 руб.",
-      where: "Компьютерные сети",
-      image:
-        "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Дорожный несессер из натуральной кожи",
-      desc: "Удобная статусная сумка для хранения бритвы и косметических средств в путешествиях.",
-      price: "2 000 - 5 500 -руб.",
-      where: "Кожевенные бренды",
-      image:
-        "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1511556532299-8f662fc26c06?w=600&auto=format&fit=crop&q=80",
     },
   ],
-  "35-40-years": [
+  "36-40-years": [
     {
-      title: "Робот-пылесос с функцией влажной уборки",
-      desc: "Умная техника, поддерживающая идеальную чистоту пола по расписанию.",
-      price: "12 000 - 35 000 руб.",
-      where: "Технопарк, М.Видео",
+      title: "Professional Barometer Station",
+      desc: "Elegant wooden frame analog weather monitor counting atmospheric humidity pressures.",
+      price: "$40 - $95",
+      where: "Home decor shops",
       image:
-        "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Капсульная или автоматическая кофемашина",
-      desc: "Готовит латте, капучино и эспрессо одной кнопкой со встроенным капучинатором.",
-      price: "15 000 - 50 000 руб.",
-      where: "Фирменные бутики Delonghi/Philips",
+      title: "High-End Electric Coffee Grinder",
+      desc: "Conical burr milling machine preparing uniform coffee bean powder grains.",
+      price: "$70 - $190",
+      where: "Coffee gear tech rows",
       image:
-        "https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Электрический гриль-прижимной",
-      desc: "Для быстрой жарки идеальных сочных стейков и овощей без добавления масла.",
-      price: "5 000 - 20 000 руб.",
-      where: "Магазины электроники",
+      title: "Genuine Leather Business Briefcase",
+      desc: "Spacious multi-pocket laptop commuter satchel featuring heavy brass zip locks.",
+      price: "$80 - $250",
+      where: "Baggage luxury stores",
       image:
-        "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор автоматических мельниц для специй с подсветкой",
-      desc: "Стильные стальные мельницы, перемалывающие перец и соль от простого наклона.",
-      price: "1 500 - 3 500 руб.",
-      where: "Посудные бутики, Ozon",
+      title: "Smart Indoor Herb Garden Box",
+      desc: "Automated baseline hydroponic crate keeping spice plants well watered under timers.",
+      price: "$60 - $130",
+      where: "Smart garden boutique stores",
       image:
-        "https://images.unsplash.com/photo-1588854337236-6889d631faa8?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Ортопедическое офисное кресло эргономичное",
-      desc: "Кресло премиум-класса с поддержкой поясницы для долгой комфортной работы.",
-      price: "10 000 - 35 000 руб.",
-      where: "Мебельные центры",
+      title: "Acoustic Noise-Isolating Headphones",
+      desc: "Over-ear cushioned headset producing deep hi-res music frequency playbacks.",
+      price: "$120 - $350",
+      where: "Premium audio markets, Best Buy",
       image:
-        "https://images.unsplash.com/photo-1505797149-43b0069ec26b?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор качественного садового инструмента в кейсе",
-      desc: "Идеальный подарок для владельцев загородных домов и дачных участков.",
-      price: "2 500 - 7 000 руб.",
-      where: "ОБИ, Леруа Мерлен",
+      title: "Handcrafted Oak Wood Whiskey Decanter",
+      desc: "Stunning crystal glass container matching matching cut-glass beverage tumblers.",
+      price: "$45 - $110",
+      where: "Gift artisan hubs, Etsy",
       image:
-        "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Беспроводной автомобильный пылесос высокой мощности",
-      desc: "Легкий ручной пылесос для идеальной уборки крошек и пыли в салоне машины.",
-      price: "2 500 - 6 000 руб.",
-      where: "Автомагазины",
+      title: "Heavy Weighted Sleep Blanket",
+      desc: "Premium therapeutic glass-beaded quilt helping reduce evening stress levels.",
+      price: "$50 - $120",
+      where: "Home bedding supermarkets",
       image:
-        "https://images.unsplash.com/photo-1486006920555-c77dce18193b?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Брендовые кожаные аксессуары (сумка / портфель)",
-      desc: "Деловой качественный мужской или женский портфель из плотной дорогой кожи.",
-      price: "7 000 - 25 000 руб.",
-      where: "Бутики кожи Piquadro",
+      title: "Robot Vacuum Cleaner System",
+      desc: "Autonomous slim flooring vacuum box returning itself straight onto recharging docks.",
+      price: "$130 - $350",
+      where: "Home appliances malls",
       image:
-        "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Электронный винный штопор в подарочном наборе",
-      desc: "Открывает любую бутылку за пару секунд, в комплекте идет вакуумная пробка.",
-      price: "1 800 - 4 000 руб.",
-      where: "Магазины подарков",
+      title: "Premium BBQ Meat Smoking Kit",
+      desc: "Fragrant wood chip variety boxes bundled along durable digital probe thermometers.",
+      price: "$30 - $65",
+      where: "Hardware grilling lines, Amazon",
       image:
-        "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Семейная портретная картина на холсте по фотографии",
-      desc: "Индивидуальный красивый подарок, напечатанный и оформленный багетной рамой.",
-      price: "2 500 - 7 000 руб.",
-      where: "Художественные студии печати",
+      title: "Aviation Carbon Fiber Luggage Case",
+      desc: "Ultra rigid lightweight hardcase wheel suitcase built for long flight travels.",
+      price: "$90 - $240",
+      where: "Luggage boutique lines",
       image:
-        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Автомобильный видеорегистратор 4K со скрытой установкой",
-      desc: "Высокотехнологичный гаджет безопасности с записью происходящего в ультра-качестве.",
-      price: "5 000 - 15 000 руб.",
-      where: "Магазины электроники",
+      title: "Orthopedic Massage Car Seat Topper",
+      desc: "Therapeutic lumber mesh wire nodes relaxing posture muscles across long drives.",
+      price: "$25 - $60",
+      where: "Car care specialty centers",
       image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Подарочный сертификат в SPA-комплекс для двоих",
-      desc: "День релакса, массажа и отдыха от городской суеты.",
-      price: "5 000 - 15 000 руб.",
-      where: "SPA-салоны города",
+      title: "Luxury Fountain Pen Inkwell Set",
+      desc: "Chased chrome barrel fountain pen writing gear paired inside fine wooden display boxes.",
+      price: "$35 - $90",
+      where: "Stationery collectors markets",
       image:
-        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Портативная автохолодильная камера",
-      desc: "Компрессорный холодильник в багажник для сохранения свежести еды на пикнике.",
-      price: "8 000 - 20 000 руб.",
-      where: "Товары для туризма",
+      title: "Country Resort Weekend Voucher",
+      desc: "Hotel weekend reservation pass booking relaxing golf or nature holiday cabins.",
+      price: "$100 - $400",
+      where: "Tourism agencies websites",
       image:
-        "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "retro-cars": [
     {
       type: "retro",
-      title: "Масштабная коллекционная модель (1:43 / 1:18)",
-      desc: "Металлическая детализированная точная копия советского или зарубежного классического авто (ГАЗ-24, Чайка, Мустанг).",
-      price: "2 500 - 12 000 руб.",
-      where: "Коллекционные лавки, аукционы",
+      title: "Die-cast Vintage Car Model (1:18)",
+      desc: "Detailed metal collectible replicating classic 1930s-1960s luxury retro vehicles.",
+      price: "$40 - $120",
+      where: "Hobby stores, eBay",
       image:
-        "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
-      title: "Винтажный плакат / Жестяная вывеска",
-      desc: "Антикварная реклама гонок или классических автомобилей середины XX века для оформления интерьера.",
-      price: "1 000 - 4 000 руб.",
-      where: "Ретро-рынки, тематические сайты",
+      title: "Classic Retro Car Wall Neon Sign",
+      desc: "Bright designer LED lamp stylized as a vintage gas station garage ornament.",
+      price: "$30 - $85",
+      where: "Decor shops, Amazon",
       image:
-        "https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
-      title: "Книга-энциклопедия истории мирового автопрома",
-      desc: "Тяжелое подарочное издание с архивными чертежами и редкими фотографиями раритетов.",
-      price: "1 500 - 5 000 руб.",
-      where: "Специализированные издательства",
+      title: "Leather Retro Driving Gloves",
+      desc: "Genuine soft perforated leather vintage wear for real classic car feel enthusiasts.",
+      price: "$25 - $70",
+      where: "Men accessories fashion shops",
       image:
-        "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "retro",
-      title: "Коллекционные наручные часы в автомобильном стиле",
-      desc: "Часы с циферблатом, стилизованным под спидометр гоночных болидов 60-х годов.",
-      price: "5 000 - 25 000 руб.",
-      where: "Часовые часовые салоны",
+      title: "Automobile Blueprint Poster Framed",
+      desc: "Detailed monochrome engineering drawing schematic prints of historic retro engines.",
+      price: "$15 - $45",
+      where: "Online print shops, Etsy",
       image:
-        "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Mechanical Wooden Car 3D Puzzle",
+      desc: "Laser-cut wooden assembly set that builds a wind-up movable retro roadster car.",
+      price: "$20 - $50",
+      where: "Hobbycraft platforms, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Vintage Racing Chromed Keychain",
+      desc: "Heavyweight steel solid emblem pendant replicating legendary vintage racing wings.",
+      price: "$8 - $20",
+      where: "Car boutique gift corners",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Classic Car Photo Book Album",
+      desc: "Encyclopedia with high-definition photos detailing historical retro automobile design evolution.",
+      price: "$35 - $90",
+      where: "Book distributors, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Retro Desktop Dashboard Clock",
+      desc: "Analogue ticking table clock styled as a dashboard instrument speedometer display panel.",
+      price: "$18 - $40",
+      where: "Antiques shops, souvenir hubs",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Premium Garage Tool Kit Roll",
+      desc: "Waxed canvas tool organizer pouch with individual storage pockets for detailing repairs.",
+      price: "$30 - $75",
+      where: "Hardware stores",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Collector Car Branded T-shirt",
+      desc: "Premium organic cotton vintage look apparel with classic race car print designs.",
+      price: "$15 - $35",
+      where: "Brand merch fashion shops",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Car Polish Detailing Set",
+      desc: "Professional natural wax paste with microfibers to achieve a showroom retro glaze finish.",
+      price: "$25 - $60",
+      where: "Automotive dealerships",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Retro Metal License Plates Set",
+      desc: "Set of decorative pre-weathered embossed tin souvenir novelty route state plates.",
+      price: "$12 - $30",
+      where: "Retro novelty shops",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "retro",
+      title: "Vintage Leather Key Fob Pouch",
+      desc: "Handcrafted thick rustic brown cowhide container with premium brass snap hooks.",
+      price: "$10 - $25",
+      where: "Etsy artisanal stores",
+      image:
+        "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&auto=format&fit=crop&q=80",
     },
   ],
   gaming: [
     {
-      title: "Эргономичное геймерское кресло",
-      desc: "Кресло со стальным каркасом, откидывающейся спинкой и поддержкой осанки для долгих каток.",
-      price: "8 000 - 30 000 -руб.",
-      where: "4Game, DNS, маркетплейсы",
+      title: "RGB Mechanical Gaming Keyboard",
+      desc: "Premium clicky or linear switches with custom dynamic rainbow backlighting layouts.",
+      price: "$50 - $150",
+      where: "Best Buy, Amazon",
       image:
-        "https://images.unsplash.com/photo-1598550476439-6847785fce6e?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Игровая приставка (Консоль PlayStation / Xbox / Switch)",
-      desc: "Главная мечта любого геймера для погружения в современные игровые блокбастеры.",
-      price: "25 000 - 65 000 руб.",
-      where: "Магазины консолей и техники",
+      title: "Wireless Ergonomic Pro Mouse",
+      desc: "Ultra-light weight frame with customizable weight weights, macro pads, and zero input delays.",
+      price: "$45 - $110",
+      where: "Tech centers, electronic shops",
       image:
-        "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Геймерская мышь с топовым оптическим сенсором",
-      desc: "Сверхлегкая мышка с идеальным откликом без срывов при резких движениях.",
-      price: "2 500 - 10 000 руб.",
-      where: "Компьютерные магазины",
+      title: "Pro Spatial Sound Headset",
+      desc: "Surround sound active over-ear headset with clear directional acoustics and retractable microphone.",
+      price: "$60 - $180",
+      where: "GameStop, Best Buy",
       image:
-        "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Очки виртуальной реальности (VR-гарнитура)",
-      desc: "Автономный шлем для полного погружения в 3D игровое пространство.",
-      price: "35 000 - 70 000 руб.",
-      where: "Гаджеты электроники",
+      title: "Extended RGB Mouse Pad Mat",
+      desc: "Desk-sized smooth control surface fabric mat with customizable perimeter glow stripes.",
+      price: "$15 - $35",
+      where: "Online tech stores",
       image:
-        "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Smart Ambient Light Bars Set",
+      desc: "Syncs monitor displays with reactive neon lights to map immersive backlighting colors.",
+      price: "$40 - $100",
+      where: "Smart home gadgets, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Next-Gen Console Gamepad",
+      desc: "Wireless joystick game controller with tactile adaptive triggers and vibration feel motors.",
+      price: "$60 - $75",
+      where: "Official electronics department stores",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Controller Dual Charging Dock",
+      desc: "Sleek vertical fast-charging organizer station with LED ambient charging indicators.",
+      price: "$15 - $30",
+      where: "Game store networks",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Blue Light Blocking Glasses",
+      desc: "Anti-glare protective computer spectacles to alleviate eye fatigue over prolonged gameplay sessions.",
+      price: "$20 - $60",
+      where: "Opticians, specialized web platforms",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Ergonomic Lumbar Pillow",
+      desc: "Orthopedic back support cushion fitting gaming office seats to preserve posture health.",
+      price: "$25 - $50",
+      where: "Furniture mall sections",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Streaming Condenser Microphone",
+      desc: "Studio grade vocal recording device with tap-to-mute buttons and pop filter gear shields.",
+      price: "$50 - $130",
+      where: "Audio equipment markets",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Game Universe Lore Artbook",
+      desc: "Premium hardback print covering developmental concept art of popular gaming worlds.",
+      price: "$30 - $65",
+      where: "Comic book stores",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Handheld Retro Emulator Pod",
+      desc: "Pocket multi-platform screen unit packed pre-loaded with classic retro titles.",
+      price: "$40 - $95",
+      where: "Retro computing kiosks",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Digital Game Store Gift Card",
+      desc: "Prepaid electronic certificate voucher loaded to purchase game editions or upgrades.",
+      price: "$10 - $100",
+      where: "Online purchase, convenience checkout cards",
+      image:
+        "https://images.unsplash.com/photo-1595225476474-87563907a212?w=600&auto=format&fit=crop&q=80",
     },
   ],
   fishing: [
     {
-      title: "Углепластиковое спиннинговое удилище премиум-класса",
-      desc: "Легкое прочное удилище с высочайшей чувствительностью для хищной рыбы.",
-      price: "3 500 - 15 000 руб.",
-      where: "Рыболовные специализированные магазины",
+      title: "Carbon Spinning Fishing Rod",
+      desc: "Ultra-lightweight but highly durable telescopic rod designed for fine precision casts.",
+      price: "$35 - $90",
+      where: "Outdoor equipment shops",
       image:
         "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Набор силиконовых приманок и воблеров в кейсе",
-      desc: "Большой пластиковый органайзер со снастями разных весов и ярких расцветок.",
-      price: "1 500 - 5 000 руб.",
-      where: "Мир охоты и рыбалки",
-      image:
-        "https://images.unsplash.com/photo-1517462964-21fdcec3f25b?w=600&auto=format&fit=crop&q=80",
-    },
-    {
-      title: "Портативный эхолот для поиска рыбы",
-      desc: "Беспроводной забрасываемый сканер, передающий рельеф дна и косяки рыбы на смартфон.",
-      price: "7 000 - 22 000 руб.",
-      where: "Магазины навигации и эхолокации",
+      title: "Multitool Fishing Plier Gripper",
+      desc: "Corrosion-resistant aircraft aluminum tool bundle to quickly snip lines and extract hooks safely.",
+      price: "$15 - $35",
+      where: "Anglers equipment gear stalls",
       image:
         "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
     },
     {
-      title: "Вместительное складное кресло карпятника",
-      desc: "Комфортное мягкое кресло с регулировкой наклона спинки и высоты каждой ножки.",
-      price: "4 000 - 12 000 руб.",
-      where: "Туристические лавки",
+      title: "Waterproof Multi-pocket Vest",
+      desc: "Breathable mesh canvas uniform vest packed with dozens of custom utility utility zip pouches.",
+      price: "$25 - $60",
+      where: "Hunting and outdoor stores",
       image:
-        "https://images.unsplash.com/photo-1617135661125-143cb82b52d5?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Digital Portable Fish Scale",
+      desc: "Backlit LCD screen handheld baggage hook measure with built-in tape measure features.",
+      price: "$10 - $22",
+      where: "Sports retail spots",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Premium Tackle Box Organizer",
+      desc: "Three-tiered cantilever storage container chest with dividers for sinkers, lines, and rigs.",
+      price: "$20 - $55",
+      where: "Fishing tackle marts, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Polarized Fishing Sunglasses",
+      desc: "Specialized protective lenses that filter out surface river glare to view underwater fishes.",
+      price: "$18 - $50",
+      where: "Optic outlets, sports retail",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Electronic Smart Fish Finder",
+      desc: "Castable floating sonar sphere ball that maps fish presence graphs onto phone apps.",
+      price: "$90 - $220",
+      where: "Professional marine equipment centers",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Thermal Vacuum Flask Thermos",
+      desc: "Double-walled steel insulation container designed to keep hot drinks steaming for 24 full hours.",
+      price: "$20 - $45",
+      where: "Tourism gear shops, Walmart",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Waterproof Tactical Backpack",
+      desc: "Heavy-duty sealed camouflage fabric rucksack shielding gears from torrential rains.",
+      price: "$35 - $80",
+      where: "Military surplus, outdoor outlets",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Fleece Lining Camo Balaclava",
+      desc: "Windproof winter face mask guard protecting neck and head regions during freezing expeditions.",
+      price: "$10 - $25",
+      where: "Winter wear sports rows",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Compact Folding Camp Chair",
+      desc: "Ultra-portable light camping seat frame equipped with side mesh beverage holder netting slots.",
+      price: "$15 - $40",
+      where: "Camping supermarkets, Target",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Luminous Night Fishing Floats",
+      desc: "Pack of battery-powered glowing LED float bobbers ideal for catfish night catches.",
+      price: "$12 - $28",
+      where: "Angling gear shops",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      title: "Inflatable Hunter Floating Tube",
+      desc: "Heavy PVC heavy-duty solo floating lake craft designed to traverse secluded marsh bays.",
+      price: "$80 - $180",
+      where: "Boat dealerships, specialist sports houses",
+      image:
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&auto=format&fit=crop&q=80",
     },
   ],
   "modern-collecting": [
     {
       type: "modern",
-      title: "Фигурка Funko POP! любимого персонажа",
-      desc: "Популярная виниловая коллекционная фигурка с узнаваемой большой квадратной головой.",
-      price: "1 300 - 4 500 руб.",
-      where: "Гик-шопы, маркетплейсы",
+      title: "Funko Pop! Vinyl Limited Figure",
+      desc: "Iconic stylized pop culture collector figurine with a recognizable bobblehead look.",
+      price: "$12 - $45",
+      where: "Geek shops, Amazon",
       image:
         "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
-      title: "Коллекционный конструктор LEGO Creator Expert / Icons",
-      desc: "Огромные интерьерные конструкторы повышенной сложности для взрослых (Титаник, Эйфелева башня, Автомобили).",
-      price: "15 000 - 65 000 руб.",
-      where: "Мир кубиков, маркетплейсы",
+      title: "LEGO Icons Advanced Set",
+      desc: "Massive intricate architecture construct kit designed exclusively for mature hobbyists.",
+      price: "$150 - $650",
+      where: "Official LEGO flagship stores",
       image:
         "https://images.unsplash.com/photo-1560961442-a13466ae2e93?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
-      title: "Премиум фигурка Hot Toys (масштаб 1:6)",
-      desc: "Эксклюзивная коллекционная фигурка киногероя со 100% портретным сходством, подвижным скелетом и тканевым костюмом.",
-      price: "22 000 - 50 000 руб.",
-      where: "Специализированные гик-магазины",
+      title: "Hot Toys Premium Figure (1:6)",
+      desc: "Ultra-luxury movie replica collectible featuring actual fabric clothing and movie accurate faces.",
+      price: "$250 - $600",
+      where: "Sideshow Collectibles, Comic stores",
       image:
-        "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
     },
     {
       type: "modern",
-      title: "Арт-принт ограниченного тиража (Литография)",
-      desc: "Высококачественная картина по популярной игровой или кинофраншизе с личной подписью автора.",
-      price: "2 500 - 8 000 -руб.",
-      where: "Арт-галереи, сайты издательств",
+      title: "Numbered Autograph Lithograph",
+      desc: "Limited franchise canvas poster print countersigned personally by individual graphic artist creators.",
+      price: "$40 - $150",
+      where: "Publisher studio portals, Etsy",
       image:
-        "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&auto=format&fit=crop&q=80",
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Geek Franchise Heavy Coin",
+      desc: "Heavyweight solid brass novelty souvenir metal token packed inside elegant velvety display boxes.",
+      price: "$15 - $35",
+      where: "Fandom pop culture boutiques",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Acrylic Case with LED Lights",
+      desc: "Dust-proof high transparency plexiglass box frame to showcase rare valued items.",
+      price: "$25 - $70",
+      where: "Exhibition supply sellers, Amazon",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Pop Culture Prop Replica",
+      desc: "1:1 full-scale cosplay prop model featuring film accurate detailing finishes.",
+      price: "$80 - $250",
+      where: "Comic-Con marketplaces, geek stores",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Graded Trading Card Slab",
+      desc: "High-value certified protected collectible sports or anime cards preserved inside plastic capsules.",
+      price: "$30 - $500",
+      where: "Auction houses, eBay trading hubs",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Enamel Pins Display Board",
+      desc: "Felt or cork padded wall hanger tapestry to plug badge button pins.",
+      price: "$10 - $28",
+      where: "Independent artist crafts lanes",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Cyberpunk Premium Statue",
+      desc: "Hand-painted heavy artificial stone polystone scenic landscape statues.",
+      price: "$200 - $700",
+      where: "Collector specialty stores",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Collector Steelbook Movie Case",
+      desc: "Exclusive iron metal alloy disc container boxes showcasing alternative design artwork.",
+      price: "$25 - $60",
+      where: "Media entertainment shops",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Vintage Retro Comic Issue",
+      desc: "Preserved original print book containing historic character saga introductions.",
+      price: "$50 - $1000",
+      where: "Antique books distributors",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
+    },
+    {
+      type: "modern",
+      title: "Art Toy Designer Figurine",
+      desc: "Abstract low-volume customized modern pop art figures created by designer groups.",
+      price: "$40 - $180",
+      where: "Modern art exhibition shops",
+      image:
+        "https://images.unsplash.com/photo-1608889175123-8ec330b86f84?w=600&auto=format&fit=crop&q=80",
     },
   ],
 };
