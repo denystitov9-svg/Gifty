@@ -226,7 +226,7 @@ const giftsData = {
       price: "$30 - $65",
       where: "Electronics departments",
       image:
-        "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=600&auto=format&fit=crop&q=80",
+        "https://www.sheeel.com/en/hd-kids-instant-print-camera-with-2-inch-screen.html?srsltid=AfmBOoqfnrF3Uh7tT_49pDp4Ywo6je4-lWC4OG6BUmnif05f-SZ8RLB3",
     },
     {
       title: "Starlight Night Astronomy Telescope",
@@ -314,7 +314,7 @@ const giftsData = {
       price: "$22 - $50",
       where: "Toy sections, Target",
       image:
-        "https://images.unsplash.com/photo-1702390734475-d81dd8ae8fde?w=600&auto=format&fit=crop&q=80",
+        "https://cdn.sheeel.com/catalog/product/cache/074f467fdf747a38ab5e8f88243fd86f/t/b/tbd06048330_b1-600x600.jpg",
     },
   ],
   "11-15-years": [

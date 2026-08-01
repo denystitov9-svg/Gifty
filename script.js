@@ -1,4 +1,3 @@
-// LocalStorage data loading
 const userInteractions =
   JSON.parse(localStorage.getItem("gift_reviews_data")) || {};
 let cart = JSON.parse(localStorage.getItem("gift_cart_data")) || [];
@@ -106,13 +105,14 @@ function showDetail(categoryKey, giftTitle) {
     <div class="detail-layout">
       <div class="detail-left-side">
         ${gift.image ? `<img src="${gift.image}" alt="${gift.title}" class="detail-main-img">` : ""}
-        <div class="detail-description-block">
+      </div>
+
+      
+      <div class="detail-right-side">
+      <div class="detail-description-block">
           <h3>Description</h3>
           <p class="detail-full-desc">${gift.desc}</p>
         </div>
-      </div>
-
-      <div class="detail-right-side">
         <div class="sticky-info-panel">
           <div class="panel-row"><strong>💰 Price Range:</strong> <span>${gift.price}</span></div>
           <div class="panel-row"><strong>📍 Available At:</strong> <span>${gift.where}</span></div>
@@ -133,7 +133,7 @@ function showDetail(categoryKey, giftTitle) {
             <div id="detail-stars-row-${giftId}" class="stars-row">${starRatingHtml}</div>
           </div>
           <div class="comment-input-group">
-            <input type="text" id="detail-input-${giftId}" placeholder="Write your review here...">
+            <input type="text" id="detail-input-${giftId}" placeholder="Write your review">
             <button onclick="addDetailComment('${giftId}')">Submit Review</button>
           </div>
         </div>
