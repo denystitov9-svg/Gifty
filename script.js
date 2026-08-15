@@ -4,7 +4,7 @@
 // После деплоя на Render замените на реальный URL вашего сервиса,
 // например: https://giftguide-api.onrender.com
 // const API_BASE_URL = "http://localhost:3000";
-const API_BASE_URL = "https://gifty-backend-1tmt.onrender.com/";
+const API_BASE_URL = "https://gifty-backend-1tmt.onrender.com";
 // Анонимный ID устройства — НЕ регистрация. Создаётся один раз в браузере
 // и используется только для того, чтобы сервер понимал, чья это корзина.
 function getDeviceId() {
